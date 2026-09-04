@@ -1,0 +1,4716 @@
+{
+ "entity": "Berkshire Hathaway Inc.",
+ "cik": 1067983,
+ "generated": "2026-09-04T18:39:04Z",
+ "segments": [
+  {
+   "key": "bnsf",
+   "label": "BNSF Railway"
+  },
+  {
+   "key": "bhe",
+   "label": "Berkshire Hathaway Energy"
+  },
+  {
+   "key": "insurance",
+   "label": "Insurance Group"
+  },
+  {
+   "key": "manufacturing",
+   "label": "Manufacturing"
+  },
+  {
+   "key": "service_retail",
+   "label": "Service & Retailing"
+  },
+  {
+   "key": "mclane",
+   "label": "McLane"
+  },
+  {
+   "key": "pilot",
+   "label": "Pilot Travel Centers"
+  }
+ ],
+ "periods": [
+  {
+   "start": "2016-01-01",
+   "end": "2016-12-31",
+   "kind": "FY",
+   "segments": {
+    "insurance": {
+     "tax": 1585000000,
+     "pretax_basis": "operating_income",
+     "pretax": 6613000000,
+     "revenue": 50403000000,
+     "margin": 0.1312
+    },
+    "mclane": {
+     "tax": 169000000,
+     "pretax_basis": "operating_income",
+     "pretax": 431000000,
+     "revenue": 48075000000,
+     "margin": 0.009
+    },
+    "bhe": {
+     "tax": 371000000,
+     "interest": 1715000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2878000000,
+     "revenue": 17764000000,
+     "margin": 0.162
+    },
+    "bnsf": {
+     "tax": 2124000000,
+     "interest": 992000000,
+     "pretax_basis": "operating_income",
+     "pretax": 5693000000,
+     "revenue": 19829000000,
+     "margin": 0.2871
+    },
+    "service_retail": {
+     "tax": 761000000,
+     "interest": 71000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2058000000,
+     "revenue": 26392000000,
+     "margin": 0.078
+    },
+    "manufacturing": {
+     "tax": 2442000000,
+     "interest": 631000000,
+     "pretax_basis": "operating_income",
+     "pretax": 7735000000,
+     "revenue": 52969000000,
+     "margin": 0.146
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001193125-19-048926",
+    "filed": "2019-02-25"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "",
+   "end": "2016-12-31",
+   "kind": "instant",
+   "segments": {
+    "insurance": {
+     "goodwill": 15474000000,
+     "assets_ex_goodwill": 234037000000
+    },
+    "mclane": {
+     "goodwill": 734000000,
+     "assets_ex_goodwill": 5896000000
+    },
+    "bhe": {
+     "goodwill": 9266000000,
+     "assets_ex_goodwill": 74571000000
+    },
+    "bnsf": {
+     "goodwill": 14845000000,
+     "assets_ex_goodwill": 69277000000
+    },
+    "service_retail": {
+     "goodwill": 6252000000,
+     "assets_ex_goodwill": 19208000000
+    },
+    "manufacturing": {
+     "goodwill": 32915000000,
+     "assets_ex_goodwill": 93835000000
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001193125-19-048926",
+    "filed": "2019-02-25"
+   },
+   "basis": null
+  },
+  {
+   "start": "2017-04-01",
+   "end": "2017-06-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "pretax_basis": "operating_income",
+     "pretax": 1259000000,
+     "revenue": 13651000000,
+     "margin": 0.0922
+    },
+    "mclane": {
+     "pretax_basis": "operating_income",
+     "pretax": 69000000,
+     "revenue": 12581000000,
+     "margin": 0.0055
+    },
+    "bhe": {
+     "pretax_basis": "operating_income",
+     "pretax": 649000000,
+     "revenue": 4602000000,
+     "margin": 0.141
+    },
+    "bnsf": {
+     "pretax_basis": "operating_income",
+     "pretax": 1537000000,
+     "revenue": 5250000000,
+     "margin": 0.2928
+    },
+    "service_retail": {
+     "pretax_basis": "operating_income",
+     "pretax": 555000000,
+     "revenue": 6550000000,
+     "margin": 0.0847
+    },
+    "manufacturing": {
+     "pretax_basis": "operating_income",
+     "pretax": 1939000000,
+     "revenue": 12738000000,
+     "margin": 0.1522
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-18-238892",
+    "filed": "2018-08-06"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2017-01-01",
+   "end": "2017-06-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "pretax_basis": "operating_income",
+     "pretax": 2009000000,
+     "revenue": 36536000000,
+     "margin": 0.055
+    },
+    "mclane": {
+     "pretax_basis": "operating_income",
+     "pretax": 157000000,
+     "revenue": 24682000000,
+     "margin": 0.0064
+    },
+    "bhe": {
+     "pretax_basis": "operating_income",
+     "pretax": 1238000000,
+     "revenue": 8833000000,
+     "margin": 0.1402
+    },
+    "bnsf": {
+     "pretax_basis": "operating_income",
+     "pretax": 2882000000,
+     "revenue": 10435000000,
+     "margin": 0.2762
+    },
+    "service_retail": {
+     "pretax_basis": "operating_income",
+     "pretax": 948000000,
+     "revenue": 12643000000,
+     "margin": 0.075
+    },
+    "manufacturing": {
+     "pretax_basis": "operating_income",
+     "pretax": 3426000000,
+     "revenue": 24835000000,
+     "margin": 0.138
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-18-238892",
+    "filed": "2018-08-06"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2017-07-01",
+   "end": "2017-09-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "pretax_basis": "operating_income",
+     "pretax": -963000000,
+     "revenue": 14597000000,
+     "margin": -0.066
+    },
+    "mclane": {
+     "pretax_basis": "operating_income",
+     "pretax": 45000000,
+     "revenue": 12798000000,
+     "margin": 0.0035
+    },
+    "bhe": {
+     "pretax_basis": "operating_income",
+     "pretax": 1243000000,
+     "revenue": 5351000000,
+     "margin": 0.2323
+    },
+    "bnsf": {
+     "pretax_basis": "operating_income",
+     "pretax": 1710000000,
+     "revenue": 5314000000,
+     "margin": 0.3218
+    },
+    "service_retail": {
+     "pretax_basis": "operating_income",
+     "pretax": 491000000,
+     "revenue": 6527000000,
+     "margin": 0.0752
+    },
+    "manufacturing": {
+     "pretax_basis": "operating_income",
+     "pretax": 2002000000,
+     "revenue": 12819000000,
+     "margin": 0.1562
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-18-317734",
+    "filed": "2018-11-05"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2017-01-01",
+   "end": "2017-09-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "pretax_basis": "operating_income",
+     "pretax": 1046000000,
+     "revenue": 51133000000,
+     "margin": 0.0205
+    },
+    "mclane": {
+     "pretax_basis": "operating_income",
+     "pretax": 202000000,
+     "revenue": 37480000000,
+     "margin": 0.0054
+    },
+    "bhe": {
+     "pretax_basis": "operating_income",
+     "pretax": 2481000000,
+     "revenue": 14184000000,
+     "margin": 0.1749
+    },
+    "bnsf": {
+     "pretax_basis": "operating_income",
+     "pretax": 4592000000,
+     "revenue": 15749000000,
+     "margin": 0.2916
+    },
+    "service_retail": {
+     "pretax_basis": "operating_income",
+     "pretax": 1439000000,
+     "revenue": 19170000000,
+     "margin": 0.0751
+    },
+    "manufacturing": {
+     "pretax_basis": "operating_income",
+     "pretax": 5428000000,
+     "revenue": 37654000000,
+     "margin": 0.1442
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-18-317734",
+    "filed": "2018-11-05"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2017-01-01",
+   "end": "2017-12-31",
+   "kind": "FY",
+   "segments": {
+    "insurance": {
+     "revenue": 65462000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1616000000,
+     "tax": -71000000,
+     "margin": 0.0247
+    },
+    "bnsf": {
+     "revenue": 21387000000,
+     "pretax_basis": "operating_income",
+     "pretax": 6328000000,
+     "interest": 1016000000,
+     "tax": 2369000000,
+     "margin": 0.2959
+    },
+    "bhe": {
+     "revenue": 18854000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2499000000,
+     "interest": 2254000000,
+     "tax": 148000000,
+     "margin": 0.1325
+    },
+    "manufacturing": {
+     "revenue": 57645000000,
+     "pretax_basis": "operating_income",
+     "pretax": 8324000000,
+     "interest": 679000000,
+     "tax": 2678000000,
+     "margin": 0.1444
+    },
+    "mclane": {
+     "revenue": 49775000000,
+     "pretax_basis": "operating_income",
+     "pretax": 299000000,
+     "interest": 19000000,
+     "tax": 94000000,
+     "margin": 0.006
+    },
+    "service_retail": {
+     "revenue": 27219000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2304000000,
+     "interest": 67000000,
+     "tax": 812000000,
+     "margin": 0.0846
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001564590-20-005874",
+    "filed": "2020-02-24"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2017-10-01",
+   "end": "2017-12-31",
+   "kind": "Q",
+   "derived": "FY minus nine-month year-to-date",
+   "segments": {
+    "insurance": {
+     "revenue": 14329000000,
+     "pretax": 570000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.0398
+    },
+    "bnsf": {
+     "revenue": 5638000000,
+     "pretax": 1736000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.3079
+    },
+    "bhe": {
+     "revenue": 4670000000,
+     "pretax": 18000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.0039
+    },
+    "manufacturing": {
+     "revenue": 19991000000,
+     "pretax": 2896000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.1449
+    },
+    "mclane": {
+     "revenue": 12295000000,
+     "pretax": 97000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.0079
+    },
+    "service_retail": {
+     "revenue": 8049000000,
+     "pretax": 865000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.1075
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001564590-20-005874",
+    "filed": "2020-02-24"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "",
+   "end": "2017-12-31",
+   "kind": "instant",
+   "segments": {
+    "insurance": {
+     "goodwill": 15499000000,
+     "assets_ex_goodwill": 294418000000
+    },
+    "bnsf": {
+     "goodwill": 14845000000,
+     "assets_ex_goodwill": 69438000000
+    },
+    "bhe": {
+     "goodwill": 9935000000,
+     "assets_ex_goodwill": 77710000000
+    },
+    "manufacturing": {
+     "goodwill": 33967000000,
+     "assets_ex_goodwill": 97753000000
+    },
+    "mclane": {
+     "goodwill": 734000000,
+     "assets_ex_goodwill": 6090000000
+    },
+    "service_retail": {
+     "goodwill": 6278000000,
+     "assets_ex_goodwill": 20014000000
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001564590-20-005874",
+    "filed": "2020-02-24"
+   },
+   "basis": null
+  },
+  {
+   "start": "2018-01-01",
+   "end": "2018-03-31",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "pretax_basis": "operating_income",
+     "pretax": 1723000000,
+     "revenue": 14586000000,
+     "margin": 0.1181
+    },
+    "mclane": {
+     "pretax_basis": "operating_income",
+     "pretax": 60000000,
+     "revenue": 12189000000,
+     "margin": 0.0049
+    },
+    "bhe": {
+     "pretax_basis": "operating_income",
+     "pretax": 487000000,
+     "revenue": 4512000000,
+     "margin": 0.1079
+    },
+    "bnsf": {
+     "pretax_basis": "operating_income",
+     "pretax": 1513000000,
+     "revenue": 5624000000,
+     "margin": 0.269
+    },
+    "service_retail": {
+     "pretax_basis": "operating_income",
+     "pretax": 573000000,
+     "revenue": 6815000000,
+     "margin": 0.0841
+    },
+    "manufacturing": {
+     "pretax_basis": "operating_income",
+     "pretax": 2207000000,
+     "revenue": 14722000000,
+     "margin": 0.1499
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-19-137433",
+    "filed": "2019-05-06"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2018-04-01",
+   "end": "2018-06-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 15548000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2596000000,
+     "margin": 0.167
+    },
+    "bnsf": {
+     "revenue": 5878000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1655000000,
+     "margin": 0.2816
+    },
+    "bhe": {
+     "revenue": 5050000000,
+     "pretax_basis": "operating_income",
+     "pretax": 586000000,
+     "margin": 0.116
+    },
+    "manufacturing": {
+     "revenue": 15927000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2529000000,
+     "margin": 0.1588
+    },
+    "mclane": {
+     "revenue": 12427000000,
+     "pretax_basis": "operating_income",
+     "pretax": 67000000,
+     "margin": 0.0054
+    },
+    "service_retail": {
+     "revenue": 7307000000,
+     "pretax_basis": "operating_income",
+     "pretax": 763000000,
+     "margin": 0.1044
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001564590-19-028491",
+    "filed": "2019-08-05"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2018-01-01",
+   "end": "2018-06-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 30134000000,
+     "pretax_basis": "operating_income",
+     "pretax": 4319000000,
+     "margin": 0.1433
+    },
+    "bnsf": {
+     "revenue": 11502000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3168000000,
+     "margin": 0.2754
+    },
+    "bhe": {
+     "revenue": 9562000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1073000000,
+     "margin": 0.1122
+    },
+    "manufacturing": {
+     "revenue": 30649000000,
+     "pretax_basis": "operating_income",
+     "pretax": 4736000000,
+     "margin": 0.1545
+    },
+    "mclane": {
+     "revenue": 24616000000,
+     "pretax_basis": "operating_income",
+     "pretax": 127000000,
+     "margin": 0.0052
+    },
+    "service_retail": {
+     "revenue": 14122000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1336000000,
+     "margin": 0.0946
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001564590-19-028491",
+    "filed": "2019-08-05"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2018-07-01",
+   "end": "2018-09-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 15779000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2054000000,
+     "margin": 0.1302
+    },
+    "bnsf": {
+     "revenue": 6147000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1879000000,
+     "margin": 0.3057
+    },
+    "bhe": {
+     "revenue": 5706000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1165000000,
+     "margin": 0.2042
+    },
+    "manufacturing": {
+     "revenue": 15686000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2369000000,
+     "margin": 0.151
+    },
+    "mclane": {
+     "revenue": 12822000000,
+     "pretax_basis": "operating_income",
+     "pretax": 44000000,
+     "margin": 0.0034
+    },
+    "service_retail": {
+     "revenue": 7230000000,
+     "pretax_basis": "operating_income",
+     "pretax": 701000000,
+     "margin": 0.097
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950123-19-009995",
+    "filed": "2019-11-04"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2018-01-01",
+   "end": "2018-09-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 45913000000,
+     "pretax_basis": "operating_income",
+     "pretax": 6373000000,
+     "margin": 0.1388
+    },
+    "bnsf": {
+     "revenue": 17649000000,
+     "pretax_basis": "operating_income",
+     "pretax": 5047000000,
+     "margin": 0.286
+    },
+    "bhe": {
+     "revenue": 15268000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2238000000,
+     "margin": 0.1466
+    },
+    "manufacturing": {
+     "revenue": 46335000000,
+     "pretax_basis": "operating_income",
+     "pretax": 7105000000,
+     "margin": 0.1533
+    },
+    "mclane": {
+     "revenue": 37438000000,
+     "pretax_basis": "operating_income",
+     "pretax": 171000000,
+     "margin": 0.0046
+    },
+    "service_retail": {
+     "revenue": 21352000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2037000000,
+     "margin": 0.0954
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950123-19-009995",
+    "filed": "2019-11-04"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2018-01-01",
+   "end": "2018-12-31",
+   "kind": "FY",
+   "segments": {
+    "insurance": {
+     "revenue": 62936000000,
+     "pretax_basis": "operating_income",
+     "pretax": 7513000000,
+     "tax": 1374000000,
+     "margin": 0.1194
+    },
+    "bnsf": {
+     "revenue": 23855000000,
+     "pretax_basis": "operating_income",
+     "pretax": 6863000000,
+     "interest": 1041000000,
+     "tax": 1644000000,
+     "margin": 0.2877
+    },
+    "bhe": {
+     "revenue": 19987000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2472000000,
+     "interest": 1777000000,
+     "tax": -452000000,
+     "margin": 0.1237
+    },
+    "manufacturing": {
+     "revenue": 61883000000,
+     "pretax_basis": "operating_income",
+     "pretax": 9366000000,
+     "interest": 690000000,
+     "tax": 2188000000,
+     "margin": 0.1514
+    },
+    "mclane": {
+     "revenue": 49987000000,
+     "pretax_basis": "operating_income",
+     "pretax": 246000000,
+     "interest": 15000000,
+     "tax": 59000000,
+     "margin": 0.0049
+    },
+    "service_retail": {
+     "revenue": 28939000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2696000000,
+     "interest": 91000000,
+     "tax": 634000000,
+     "margin": 0.0932
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001564590-21-009611",
+    "filed": "2021-03-01"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2018-10-01",
+   "end": "2018-12-31",
+   "kind": "Q",
+   "derived": "FY minus nine-month year-to-date",
+   "segments": {
+    "insurance": {
+     "revenue": 17023000000,
+     "pretax": 1140000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.067
+    },
+    "bnsf": {
+     "revenue": 6206000000,
+     "pretax": 1816000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.2926
+    },
+    "bhe": {
+     "revenue": 4719000000,
+     "pretax": 234000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.0496
+    },
+    "manufacturing": {
+     "revenue": 15548000000,
+     "pretax": 2261000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.1454
+    },
+    "mclane": {
+     "revenue": 12549000000,
+     "pretax": 75000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.006
+    },
+    "service_retail": {
+     "revenue": 7587000000,
+     "pretax": 659000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.0869
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001564590-21-009611",
+    "filed": "2021-03-01"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "",
+   "end": "2018-12-31",
+   "kind": "instant",
+   "segments": {
+    "insurance": {
+     "goodwill": 15289000000,
+     "assets_ex_goodwill": 289746000000
+    },
+    "bnsf": {
+     "goodwill": 14851000000,
+     "assets_ex_goodwill": 70242000000
+    },
+    "bhe": {
+     "goodwill": 9851000000,
+     "assets_ex_goodwill": 80543000000
+    },
+    "manufacturing": {
+     "goodwill": 34019000000,
+     "assets_ex_goodwill": 99912000000
+    },
+    "mclane": {
+     "goodwill": 734000000,
+     "assets_ex_goodwill": 6243000000
+    },
+    "service_retail": {
+     "goodwill": 6281000000,
+     "assets_ex_goodwill": 24724000000
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001564590-21-009611",
+    "filed": "2021-03-01"
+   },
+   "basis": null
+  },
+  {
+   "start": "2019-01-01",
+   "end": "2019-03-31",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 15806000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1972000000,
+     "margin": 0.1248
+    },
+    "bnsf": {
+     "revenue": 5762000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1665000000,
+     "margin": 0.289
+    },
+    "bhe": {
+     "revenue": 4672000000,
+     "pretax_basis": "operating_income",
+     "pretax": 540000000,
+     "margin": 0.1156
+    },
+    "manufacturing": {
+     "revenue": 15070000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2194000000,
+     "margin": 0.1456
+    },
+    "mclane": {
+     "revenue": 12199000000,
+     "pretax_basis": "operating_income",
+     "pretax": 111000000,
+     "margin": 0.0091
+    },
+    "service_retail": {
+     "revenue": 7025000000,
+     "pretax_basis": "operating_income",
+     "pretax": 621000000,
+     "margin": 0.0884
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001564590-20-020599",
+    "filed": "2020-05-04"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2019-04-01",
+   "end": "2019-06-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 16517000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2105000000,
+     "margin": 0.1274
+    },
+    "bnsf": {
+     "revenue": 5893000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1773000000,
+     "margin": 0.3009
+    },
+    "bhe": {
+     "revenue": 4970000000,
+     "pretax_basis": "operating_income",
+     "pretax": 593000000,
+     "margin": 0.1193
+    },
+    "manufacturing": {
+     "revenue": 16206000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2527000000,
+     "margin": 0.1559
+    },
+    "mclane": {
+     "revenue": 12411000000,
+     "pretax_basis": "operating_income",
+     "pretax": 59000000,
+     "margin": 0.0048
+    },
+    "service_retail": {
+     "revenue": 7462000000,
+     "pretax_basis": "operating_income",
+     "pretax": 745000000,
+     "margin": 0.0998
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001564590-20-038544",
+    "filed": "2020-08-10"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2019-01-01",
+   "end": "2019-06-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 32323000000,
+     "pretax_basis": "operating_income",
+     "pretax": 4077000000,
+     "margin": 0.1261
+    },
+    "bnsf": {
+     "revenue": 11655000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3438000000,
+     "margin": 0.295
+    },
+    "bhe": {
+     "revenue": 9642000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1133000000,
+     "margin": 0.1175
+    },
+    "manufacturing": {
+     "revenue": 31276000000,
+     "pretax_basis": "operating_income",
+     "pretax": 4721000000,
+     "margin": 0.1509
+    },
+    "mclane": {
+     "revenue": 24610000000,
+     "pretax_basis": "operating_income",
+     "pretax": 170000000,
+     "margin": 0.0069
+    },
+    "service_retail": {
+     "revenue": 14487000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1366000000,
+     "margin": 0.0943
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001564590-20-038544",
+    "filed": "2020-08-10"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2019-07-01",
+   "end": "2019-09-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 17112000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2363000000,
+     "margin": 0.1381
+    },
+    "bnsf": {
+     "revenue": 6021000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1941000000,
+     "margin": 0.3224
+    },
+    "bhe": {
+     "revenue": 5720000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1061000000,
+     "margin": 0.1855
+    },
+    "manufacturing": {
+     "revenue": 15897000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2484000000,
+     "margin": 0.1563
+    },
+    "mclane": {
+     "revenue": 12604000000,
+     "pretax_basis": "operating_income",
+     "pretax": 50000000,
+     "margin": 0.004
+    },
+    "service_retail": {
+     "revenue": 7378000000,
+     "pretax_basis": "operating_income",
+     "pretax": 639000000,
+     "margin": 0.0866
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001564590-20-052144",
+    "filed": "2020-11-09"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2019-01-01",
+   "end": "2019-09-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 49435000000,
+     "pretax_basis": "operating_income",
+     "pretax": 6440000000,
+     "margin": 0.1303
+    },
+    "bnsf": {
+     "revenue": 17676000000,
+     "pretax_basis": "operating_income",
+     "pretax": 5379000000,
+     "margin": 0.3043
+    },
+    "bhe": {
+     "revenue": 15362000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2194000000,
+     "margin": 0.1428
+    },
+    "manufacturing": {
+     "revenue": 47173000000,
+     "pretax_basis": "operating_income",
+     "pretax": 7205000000,
+     "margin": 0.1527
+    },
+    "mclane": {
+     "revenue": 37214000000,
+     "pretax_basis": "operating_income",
+     "pretax": 220000000,
+     "margin": 0.0059
+    },
+    "service_retail": {
+     "revenue": 21865000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2005000000,
+     "margin": 0.0917
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001564590-20-052144",
+    "filed": "2020-11-09"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2019-01-01",
+   "end": "2019-12-31",
+   "kind": "FY",
+   "segments": {
+    "insurance": {
+     "revenue": 67693000000,
+     "pretax_basis": "operating_income",
+     "pretax": 7017000000,
+     "tax": 1166000000,
+     "margin": 0.1037
+    },
+    "bnsf": {
+     "revenue": 23515000000,
+     "pretax_basis": "operating_income",
+     "pretax": 7250000000,
+     "interest": 1070000000,
+     "tax": 1769000000,
+     "margin": 0.3083
+    },
+    "bhe": {
+     "revenue": 20114000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2618000000,
+     "interest": 1835000000,
+     "tax": -526000000,
+     "margin": 0.1302
+    },
+    "manufacturing": {
+     "revenue": 62730000000,
+     "pretax_basis": "operating_income",
+     "pretax": 9522000000,
+     "interest": 752000000,
+     "tax": 2253000000,
+     "margin": 0.1518
+    },
+    "mclane": {
+     "revenue": 50458000000,
+     "pretax_basis": "operating_income",
+     "pretax": 288000000,
+     "tax": 71000000,
+     "margin": 0.0057
+    },
+    "service_retail": {
+     "revenue": 29487000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2555000000,
+     "interest": 86000000,
+     "tax": 603000000,
+     "margin": 0.0866
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001564590-22-007322",
+    "filed": "2022-02-28"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2019-10-01",
+   "end": "2019-12-31",
+   "kind": "Q",
+   "derived": "FY minus nine-month year-to-date",
+   "segments": {
+    "insurance": {
+     "revenue": 18258000000,
+     "pretax": 577000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.0316
+    },
+    "bnsf": {
+     "revenue": 5839000000,
+     "pretax": 1871000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.3204
+    },
+    "bhe": {
+     "revenue": 4752000000,
+     "pretax": 424000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.0892
+    },
+    "manufacturing": {
+     "revenue": 15557000000,
+     "pretax": 2317000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.1489
+    },
+    "mclane": {
+     "revenue": 13244000000,
+     "pretax": 68000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.0051
+    },
+    "service_retail": {
+     "revenue": 7622000000,
+     "pretax": 550000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.0722
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001564590-22-007322",
+    "filed": "2022-02-28"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "",
+   "end": "2019-12-31",
+   "kind": "instant",
+   "segments": {
+    "insurance": {
+     "goodwill": 15289000000,
+     "assets_ex_goodwill": 364550000000
+    },
+    "bnsf": {
+     "goodwill": 14851000000,
+     "assets_ex_goodwill": 73699000000
+    },
+    "bhe": {
+     "goodwill": 9979000000,
+     "assets_ex_goodwill": 88651000000
+    },
+    "manufacturing": {
+     "goodwill": 34800000000,
+     "assets_ex_goodwill": 104437000000
+    },
+    "mclane": {
+     "goodwill": 734000000,
+     "assets_ex_goodwill": 6872000000
+    },
+    "service_retail": {
+     "goodwill": 6229000000,
+     "assets_ex_goodwill": 26494000000
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001564590-22-007322",
+    "filed": "2022-02-28"
+   },
+   "basis": null
+  },
+  {
+   "start": "2020-01-01",
+   "end": "2020-03-31",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 17396000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2109000000,
+     "margin": 0.1212
+    },
+    "bnsf": {
+     "revenue": 5417000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1584000000,
+     "margin": 0.2924
+    },
+    "bhe": {
+     "revenue": 4507000000,
+     "pretax_basis": "operating_income",
+     "pretax": 419000000,
+     "margin": 0.093
+    },
+    "manufacturing": {
+     "revenue": 15035000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2111000000,
+     "margin": 0.1404
+    },
+    "mclane": {
+     "revenue": 11821000000,
+     "pretax_basis": "operating_income",
+     "pretax": 65000000,
+     "margin": 0.0055
+    },
+    "service_retail": {
+     "revenue": 6956000000,
+     "pretax_basis": "operating_income",
+     "pretax": 558000000,
+     "margin": 0.0802
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001564590-21-022703",
+    "filed": "2021-05-03"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2020-04-01",
+   "end": "2020-06-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 17210000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2666000000,
+     "margin": 0.1549
+    },
+    "bnsf": {
+     "revenue": 4602000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1494000000,
+     "margin": 0.3246
+    },
+    "bhe": {
+     "revenue": 4659000000,
+     "pretax_basis": "operating_income",
+     "pretax": 533000000,
+     "margin": 0.1144
+    },
+    "manufacturing": {
+     "revenue": 13033000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1399000000,
+     "margin": 0.1073
+    },
+    "mclane": {
+     "revenue": 11218000000,
+     "pretax_basis": "operating_income",
+     "pretax": 44000000,
+     "margin": 0.0039
+    },
+    "service_retail": {
+     "revenue": 6037000000,
+     "pretax_basis": "operating_income",
+     "pretax": 408000000,
+     "margin": 0.0676
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001564590-21-042312",
+    "filed": "2021-08-09"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2020-01-01",
+   "end": "2020-06-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 34606000000,
+     "pretax_basis": "operating_income",
+     "pretax": 4775000000,
+     "margin": 0.138
+    },
+    "bnsf": {
+     "revenue": 10019000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3078000000,
+     "margin": 0.3072
+    },
+    "bhe": {
+     "revenue": 9166000000,
+     "pretax_basis": "operating_income",
+     "pretax": 952000000,
+     "margin": 0.1039
+    },
+    "manufacturing": {
+     "revenue": 28068000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3510000000,
+     "margin": 0.1251
+    },
+    "mclane": {
+     "revenue": 23039000000,
+     "pretax_basis": "operating_income",
+     "pretax": 109000000,
+     "margin": 0.0047
+    },
+    "service_retail": {
+     "revenue": 12993000000,
+     "pretax_basis": "operating_income",
+     "pretax": 966000000,
+     "margin": 0.0743
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001564590-21-042312",
+    "filed": "2021-08-09"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2020-07-01",
+   "end": "2020-09-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 17136000000,
+     "pretax_basis": "operating_income",
+     "pretax": 929000000,
+     "margin": 0.0542
+    },
+    "bnsf": {
+     "revenue": 5176000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1777000000,
+     "margin": 0.3433
+    },
+    "bhe": {
+     "revenue": 6226000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1122000000,
+     "margin": 0.1802
+    },
+    "manufacturing": {
+     "revenue": 15170000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2255000000,
+     "margin": 0.1486
+    },
+    "mclane": {
+     "revenue": 12040000000,
+     "pretax_basis": "operating_income",
+     "pretax": 96000000,
+     "margin": 0.008
+    },
+    "service_retail": {
+     "revenue": 7279000000,
+     "pretax_basis": "operating_income",
+     "pretax": 779000000,
+     "margin": 0.107
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001564590-21-055032",
+    "filed": "2021-11-08"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2020-01-01",
+   "end": "2020-09-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 51742000000,
+     "pretax_basis": "operating_income",
+     "pretax": 5704000000,
+     "margin": 0.1102
+    },
+    "bnsf": {
+     "revenue": 15195000000,
+     "pretax_basis": "operating_income",
+     "pretax": 4855000000,
+     "margin": 0.3195
+    },
+    "bhe": {
+     "revenue": 15392000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2074000000,
+     "margin": 0.1347
+    },
+    "manufacturing": {
+     "revenue": 43238000000,
+     "pretax_basis": "operating_income",
+     "pretax": 5765000000,
+     "margin": 0.1333
+    },
+    "mclane": {
+     "revenue": 35079000000,
+     "pretax_basis": "operating_income",
+     "pretax": 205000000,
+     "margin": 0.0058
+    },
+    "service_retail": {
+     "revenue": 20272000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1745000000,
+     "margin": 0.0861
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001564590-21-055032",
+    "filed": "2021-11-08"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2020-01-01",
+   "end": "2020-12-31",
+   "kind": "FY",
+   "segments": {
+    "insurance": {
+     "revenue": 69361000000,
+     "pretax_basis": "operating_income",
+     "pretax": 6787000000,
+     "tax": 1089000000,
+     "margin": 0.0979
+    },
+    "bnsf": {
+     "revenue": 20869000000,
+     "pretax_basis": "operating_income",
+     "pretax": 6792000000,
+     "interest": 1037000000,
+     "tax": 1631000000,
+     "margin": 0.3255
+    },
+    "bhe": {
+     "revenue": 21100000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2548000000,
+     "interest": 1941000000,
+     "tax": -996000000,
+     "margin": 0.1208
+    },
+    "manufacturing": {
+     "revenue": 59079000000,
+     "pretax_basis": "operating_income",
+     "pretax": 8010000000,
+     "interest": 737000000,
+     "tax": 1795000000,
+     "margin": 0.1356
+    },
+    "mclane": {
+     "revenue": 46840000000,
+     "pretax_basis": "operating_income",
+     "pretax": 251000000,
+     "tax": 71000000,
+     "margin": 0.0054
+    },
+    "service_retail": {
+     "revenue": 28178000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2628000000,
+     "interest": 61000000,
+     "tax": 669000000,
+     "margin": 0.0933
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0000950170-23-004451",
+    "filed": "2023-02-27"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2020-10-01",
+   "end": "2020-12-31",
+   "kind": "Q",
+   "derived": "FY minus nine-month year-to-date",
+   "segments": {
+    "insurance": {
+     "revenue": 17619000000,
+     "pretax": 1083000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.0615
+    },
+    "bnsf": {
+     "revenue": 5674000000,
+     "pretax": 1937000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.3414
+    },
+    "bhe": {
+     "revenue": 5708000000,
+     "pretax": 474000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.083
+    },
+    "manufacturing": {
+     "revenue": 15841000000,
+     "pretax": 2245000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.1417
+    },
+    "mclane": {
+     "revenue": 11761000000,
+     "pretax": 46000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.0039
+    },
+    "service_retail": {
+     "revenue": 7906000000,
+     "pretax": 883000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.1117
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0000950170-23-004451",
+    "filed": "2023-02-27"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "",
+   "end": "2020-12-31",
+   "kind": "instant",
+   "segments": {
+    "insurance": {
+     "goodwill": 15224000000,
+     "assets_ex_goodwill": 399169000000
+    },
+    "bnsf": {
+     "goodwill": 14851000000,
+     "assets_ex_goodwill": 73809000000
+    },
+    "bhe": {
+     "goodwill": 11763000000,
+     "assets_ex_goodwill": 109880000000
+    },
+    "manufacturing": {
+     "goodwill": 25512000000,
+     "assets_ex_goodwill": 104318000000
+    },
+    "mclane": {
+     "goodwill": 232000000,
+     "assets_ex_goodwill": 6771000000
+    },
+    "service_retail": {
+     "goodwill": 6152000000,
+     "assets_ex_goodwill": 26173000000
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0000950170-23-004451",
+    "filed": "2023-02-27"
+   },
+   "basis": null
+  },
+  {
+   "start": "2021-01-01",
+   "end": "2021-03-31",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 17838000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2378000000,
+     "margin": 0.1333
+    },
+    "bnsf": {
+     "revenue": 5401000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1659000000,
+     "margin": 0.3072
+    },
+    "bhe": {
+     "revenue": 5924000000,
+     "pretax_basis": "operating_income",
+     "pretax": 683000000,
+     "margin": 0.1153
+    },
+    "manufacturing": {
+     "revenue": 15913000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2436000000,
+     "margin": 0.1531
+    },
+    "mclane": {
+     "revenue": 11622000000,
+     "pretax_basis": "operating_income",
+     "pretax": 103000000,
+     "margin": 0.0089
+    },
+    "service_retail": {
+     "revenue": 7958000000,
+     "pretax_basis": "operating_income",
+     "pretax": 938000000,
+     "margin": 0.1179
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001564590-22-016907",
+    "filed": "2022-05-02"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2021-04-01",
+   "end": "2021-06-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 18622000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1921000000,
+     "margin": 0.1032
+    },
+    "bnsf": {
+     "revenue": 5809000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1979000000,
+     "margin": 0.3407
+    },
+    "bhe": {
+     "revenue": 6085000000,
+     "pretax_basis": "operating_income",
+     "pretax": 739000000,
+     "margin": 0.1214
+    },
+    "manufacturing": {
+     "revenue": 17412000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2714000000,
+     "margin": 0.1559
+    },
+    "mclane": {
+     "revenue": 12295000000,
+     "pretax_basis": "operating_income",
+     "pretax": 84000000,
+     "margin": 0.0068
+    },
+    "service_retail": {
+     "revenue": 8977000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1186000000,
+     "margin": 0.1321
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001564590-22-028282",
+    "filed": "2022-08-08"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2021-01-01",
+   "end": "2021-06-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 36460000000,
+     "pretax_basis": "operating_income",
+     "pretax": 4299000000,
+     "margin": 0.1179
+    },
+    "bnsf": {
+     "revenue": 11210000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3638000000,
+     "margin": 0.3245
+    },
+    "bhe": {
+     "revenue": 12009000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1422000000,
+     "margin": 0.1184
+    },
+    "manufacturing": {
+     "revenue": 33325000000,
+     "pretax_basis": "operating_income",
+     "pretax": 5150000000,
+     "margin": 0.1545
+    },
+    "mclane": {
+     "revenue": 23917000000,
+     "pretax_basis": "operating_income",
+     "pretax": 187000000,
+     "margin": 0.0078
+    },
+    "service_retail": {
+     "revenue": 16935000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2124000000,
+     "margin": 0.1254
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001564590-22-028282",
+    "filed": "2022-08-08"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2021-07-01",
+   "end": "2021-09-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 19066000000,
+     "pretax_basis": "operating_income",
+     "pretax": 317000000,
+     "margin": 0.0166
+    },
+    "bnsf": {
+     "revenue": 5790000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2029000000,
+     "margin": 0.3504
+    },
+    "bhe": {
+     "revenue": 7013000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1375000000,
+     "margin": 0.1961
+    },
+    "manufacturing": {
+     "revenue": 17496000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2445000000,
+     "margin": 0.1397
+    },
+    "mclane": {
+     "revenue": 12612000000,
+     "pretax_basis": "operating_income",
+     "pretax": -8000000,
+     "margin": -0.0006
+    },
+    "service_retail": {
+     "revenue": 8679000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1110000000,
+     "margin": 0.1279
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-22-022287",
+    "filed": "2022-11-07"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2021-01-01",
+   "end": "2021-09-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 55526000000,
+     "pretax_basis": "operating_income",
+     "pretax": 4616000000,
+     "margin": 0.0831
+    },
+    "bnsf": {
+     "revenue": 17000000000,
+     "pretax_basis": "operating_income",
+     "pretax": 5667000000,
+     "margin": 0.3334
+    },
+    "bhe": {
+     "revenue": 19022000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2797000000,
+     "margin": 0.147
+    },
+    "manufacturing": {
+     "revenue": 50821000000,
+     "pretax_basis": "operating_income",
+     "pretax": 7595000000,
+     "margin": 0.1494
+    },
+    "mclane": {
+     "revenue": 36529000000,
+     "pretax_basis": "operating_income",
+     "pretax": 179000000,
+     "margin": 0.0049
+    },
+    "service_retail": {
+     "revenue": 25614000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3234000000,
+     "margin": 0.1263
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-22-022287",
+    "filed": "2022-11-07"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2021-01-01",
+   "end": "2021-12-31",
+   "kind": "FY",
+   "segments": {
+    "insurance": {
+     "revenue": 75122000000,
+     "pretax_basis": "operating_income",
+     "pretax": 6760000000,
+     "tax": 1083000000,
+     "capex": 62000000,
+     "margin": 0.09
+    },
+    "bnsf": {
+     "revenue": 23282000000,
+     "pretax_basis": "operating_income",
+     "pretax": 7861000000,
+     "interest": 1032000000,
+     "tax": 1871000000,
+     "capex": 2910000000,
+     "margin": 0.3376
+    },
+    "bhe": {
+     "revenue": 25096000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3293000000,
+     "interest": 2054000000,
+     "tax": -1153000000,
+     "capex": 6611000000,
+     "margin": 0.1312
+    },
+    "manufacturing": {
+     "revenue": 68730000000,
+     "pretax_basis": "operating_income",
+     "pretax": 9841000000,
+     "interest": 704000000,
+     "tax": 2193000000,
+     "capex": 2100000000,
+     "margin": 0.1432
+    },
+    "mclane": {
+     "revenue": 49450000000,
+     "pretax_basis": "operating_income",
+     "pretax": 230000000,
+     "tax": 61000000,
+     "capex": 106000000,
+     "margin": 0.0047
+    },
+    "service_retail": {
+     "revenue": 34832000000,
+     "pretax_basis": "operating_income",
+     "pretax": 4481000000,
+     "interest": 38000000,
+     "tax": 1086000000,
+     "capex": 1487000000,
+     "margin": 0.1286
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0000950170-24-019719",
+    "filed": "2024-02-26"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2021-10-01",
+   "end": "2021-12-31",
+   "kind": "Q",
+   "derived": "FY minus nine-month year-to-date",
+   "segments": {
+    "insurance": {
+     "revenue": 19596000000,
+     "pretax": 2144000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.1094
+    },
+    "bnsf": {
+     "revenue": 6282000000,
+     "pretax": 2194000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.3493
+    },
+    "bhe": {
+     "revenue": 6074000000,
+     "pretax": 496000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.0817
+    },
+    "manufacturing": {
+     "revenue": 17909000000,
+     "pretax": 2246000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.1254
+    },
+    "mclane": {
+     "revenue": 12921000000,
+     "pretax": 51000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.0039
+    },
+    "service_retail": {
+     "revenue": 9218000000,
+     "pretax": 1247000000,
+     "pretax_basis": "operating_income",
+     "margin": 0.1353
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0000950170-24-019719",
+    "filed": "2024-02-26"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "",
+   "end": "2021-12-31",
+   "kind": "instant",
+   "segments": {
+    "insurance": {
+     "goodwill": 15181000000,
+     "assets_ex_goodwill": 483417000000
+    },
+    "bnsf": {
+     "goodwill": 14852000000,
+     "assets_ex_goodwill": 76586000000
+    },
+    "bhe": {
+     "goodwill": 11906000000,
+     "assets_ex_goodwill": 113447000000
+    },
+    "manufacturing": {
+     "goodwill": 25463000000,
+     "assets_ex_goodwill": 107231000000
+    },
+    "mclane": {
+     "goodwill": 232000000,
+     "assets_ex_goodwill": 6841000000
+    },
+    "service_retail": {
+     "goodwill": 6241000000,
+     "assets_ex_goodwill": 28221000000
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0000950170-24-019719",
+    "filed": "2024-02-26"
+   },
+   "basis": null
+  },
+  {
+   "start": "2022-01-01",
+   "end": "2022-03-31",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 18852000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1576000000,
+     "margin": 0.0836
+    },
+    "bnsf": {
+     "revenue": 5968000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1809000000,
+     "margin": 0.3031
+    },
+    "bhe": {
+     "revenue": 6020000000,
+     "pretax_basis": "operating_income",
+     "pretax": 713000000,
+     "margin": 0.1184
+    },
+    "manufacturing": {
+     "revenue": 18421000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2824000000,
+     "margin": 0.1533
+    },
+    "mclane": {
+     "revenue": 12515000000,
+     "pretax_basis": "operating_income",
+     "pretax": 82000000,
+     "margin": 0.0066
+    },
+    "service_retail": {
+     "revenue": 9115000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1135000000,
+     "margin": 0.1245
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-23-018438",
+    "filed": "2023-05-08"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2022-04-01",
+   "end": "2022-06-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 20365000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3179000000,
+     "margin": 0.1561
+    },
+    "bnsf": {
+     "revenue": 6640000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2151000000,
+     "margin": 0.3239
+    },
+    "bhe": {
+     "revenue": 6545000000,
+     "pretax_basis": "operating_income",
+     "pretax": 591000000,
+     "margin": 0.0903
+    },
+    "manufacturing": {
+     "revenue": 19772000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3028000000,
+     "margin": 0.1531
+    },
+    "mclane": {
+     "revenue": 13262000000,
+     "pretax_basis": "operating_income",
+     "pretax": 76000000,
+     "margin": 0.0057
+    },
+    "service_retail": {
+     "revenue": 9617000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1199000000,
+     "margin": 0.1247
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-23-038705",
+    "filed": "2023-08-07"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2022-01-01",
+   "end": "2022-06-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 39217000000,
+     "pretax_basis": "operating_income",
+     "pretax": 4755000000,
+     "margin": 0.1212
+    },
+    "bnsf": {
+     "revenue": 12608000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3960000000,
+     "margin": 0.3141
+    },
+    "bhe": {
+     "revenue": 12565000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1304000000,
+     "margin": 0.1038
+    },
+    "manufacturing": {
+     "revenue": 38193000000,
+     "pretax_basis": "operating_income",
+     "pretax": 5852000000,
+     "margin": 0.1532
+    },
+    "mclane": {
+     "revenue": 25777000000,
+     "pretax_basis": "operating_income",
+     "pretax": 158000000,
+     "margin": 0.0061
+    },
+    "service_retail": {
+     "revenue": 18732000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2334000000,
+     "margin": 0.1246
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-23-038705",
+    "filed": "2023-08-07"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2022-07-01",
+   "end": "2022-09-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 20437000000,
+     "pretax_basis": "operating_income",
+     "pretax": 387000000,
+     "margin": 0.0189
+    },
+    "bnsf": {
+     "revenue": 6693000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1884000000,
+     "margin": 0.2815
+    },
+    "bhe": {
+     "revenue": 7557000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1347000000,
+     "margin": 0.1782
+    },
+    "manufacturing": {
+     "revenue": 19000000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2883000000,
+     "margin": 0.1517
+    },
+    "mclane": {
+     "revenue": 13569000000,
+     "pretax_basis": "operating_income",
+     "pretax": 112000000,
+     "margin": 0.0083
+    },
+    "service_retail": {
+     "revenue": 9567000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1202000000,
+     "margin": 0.1256
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-23-058993",
+    "filed": "2023-11-06"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2022-01-01",
+   "end": "2022-09-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 59654000000,
+     "pretax_basis": "operating_income",
+     "pretax": 5142000000,
+     "margin": 0.0862
+    },
+    "bnsf": {
+     "revenue": 19301000000,
+     "pretax_basis": "operating_income",
+     "pretax": 5844000000,
+     "margin": 0.3028
+    },
+    "bhe": {
+     "revenue": 20122000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2651000000,
+     "margin": 0.1317
+    },
+    "manufacturing": {
+     "revenue": 57193000000,
+     "pretax_basis": "operating_income",
+     "pretax": 8735000000,
+     "margin": 0.1527
+    },
+    "mclane": {
+     "revenue": 39346000000,
+     "pretax_basis": "operating_income",
+     "pretax": 270000000,
+     "margin": 0.0069
+    },
+    "service_retail": {
+     "revenue": 28299000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3536000000,
+     "margin": 0.125
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-23-058993",
+    "filed": "2023-11-06"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "kind": "FY",
+   "segments": {
+    "insurance": {
+     "revenue": 82310000000,
+     "costs": 74608000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 7702000000,
+     "tax": 1247000000,
+     "capex": 82000000,
+     "dna": 260000000,
+     "margin": 0.0936
+    },
+    "bnsf": {
+     "revenue": 25888000000,
+     "interest": 1025000000,
+     "costs": 18180000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 7708000000,
+     "tax": 1763000000,
+     "capex": 3532000000,
+     "dna": 2510000000,
+     "margin": 0.2977
+    },
+    "bhe": {
+     "revenue": 26393000000,
+     "interest": 2140000000,
+     "costs": 23247000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 3146000000,
+     "tax": -1629000000,
+     "capex": 7505000000,
+     "dna": 3751000000,
+     "margin": 0.1192
+    },
+    "manufacturing": {
+     "revenue": 75781000000,
+     "interest": 739000000,
+     "costs": 64604000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 11177000000,
+     "tax": 2403000000,
+     "capex": 2477000000,
+     "dna": 2140000000,
+     "margin": 0.1475
+    },
+    "service_retail": {
+     "revenue": 38303000000,
+     "interest": 42000000,
+     "costs": 33532000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 4771000000,
+     "tax": 1131000000,
+     "capex": 1775000000,
+     "dna": 1245000000,
+     "margin": 0.1246
+    },
+    "mclane": {
+     "revenue": 53209000000,
+     "costs": 52938000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 271000000,
+     "tax": 66000000,
+     "capex": 93000000,
+     "dna": 176000000,
+     "margin": 0.0051
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0000950170-25-025210",
+    "filed": "2025-02-24"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "2022-10-01",
+   "end": "2022-12-31",
+   "kind": "Q",
+   "derived": "FY minus nine-month year-to-date",
+   "segments": {
+    "insurance": {
+     "revenue": 22656000000,
+     "pretax": 2560000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.113
+    },
+    "bnsf": {
+     "revenue": 6587000000,
+     "pretax": 1864000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.283
+    },
+    "bhe": {
+     "revenue": 6271000000,
+     "pretax": 495000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.0789
+    },
+    "manufacturing": {
+     "revenue": 18588000000,
+     "pretax": 2442000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.1314
+    },
+    "service_retail": {
+     "revenue": 10004000000,
+     "pretax": 1235000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.1235
+    },
+    "mclane": {
+     "revenue": 13863000000,
+     "pretax": 1000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.0001
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0000950170-25-025210",
+    "filed": "2025-02-24"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "",
+   "end": "2022-12-31",
+   "kind": "instant",
+   "segments": {
+    "insurance": {
+     "goodwill": 16548000000,
+     "assets_ex_goodwill": 459917000000
+    },
+    "bnsf": {
+     "goodwill": 14852000000,
+     "assets_ex_goodwill": 77752000000
+    },
+    "bhe": {
+     "goodwill": 11745000000,
+     "assets_ex_goodwill": 118114000000
+    },
+    "manufacturing": {
+     "goodwill": 28460000000,
+     "assets_ex_goodwill": 113578000000
+    },
+    "mclane": {
+     "goodwill": 232000000,
+     "assets_ex_goodwill": 7049000000
+    },
+    "service_retail": {
+     "goodwill": 6282000000,
+     "assets_ex_goodwill": 31291000000
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0000950170-25-025210",
+    "filed": "2025-02-24"
+   },
+   "basis": null
+  },
+  {
+   "start": "2023-01-01",
+   "end": "2023-03-31",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 22188000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3587000000,
+     "margin": 0.1617
+    },
+    "bnsf": {
+     "revenue": 6019000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1649000000,
+     "margin": 0.274
+    },
+    "bhe": {
+     "revenue": 6451000000,
+     "pretax_basis": "operating_income",
+     "pretax": 223000000,
+     "margin": 0.0346
+    },
+    "pilot": {
+     "revenue": 9508000000,
+     "pretax_basis": "operating_income",
+     "pretax": 136000000,
+     "margin": 0.0143
+    },
+    "manufacturing": {
+     "revenue": 18289000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2611000000,
+     "margin": 0.1428
+    },
+    "mclane": {
+     "revenue": 13059000000,
+     "pretax_basis": "operating_income",
+     "pretax": 113000000,
+     "margin": 0.0087
+    },
+    "service_retail": {
+     "revenue": 9931000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1221000000,
+     "margin": 0.1229
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-24-053185",
+    "filed": "2024-05-06"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2023-04-01",
+   "end": "2023-06-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 23479000000,
+     "pretax_basis": "operating_income",
+     "pretax": 4525000000,
+     "margin": 0.1927
+    },
+    "bnsf": {
+     "revenue": 5828000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1615000000,
+     "margin": 0.2771
+    },
+    "bhe": {
+     "revenue": 6362000000,
+     "pretax_basis": "operating_income",
+     "pretax": 624000000,
+     "margin": 0.0981
+    },
+    "pilot": {
+     "revenue": 14754000000,
+     "pretax_basis": "operating_income",
+     "pretax": 186000000,
+     "margin": 0.0126
+    },
+    "manufacturing": {
+     "revenue": 19102000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3103000000,
+     "margin": 0.1624
+    },
+    "mclane": {
+     "revenue": 12883000000,
+     "pretax_basis": "operating_income",
+     "pretax": 129000000,
+     "margin": 0.01
+    },
+    "service_retail": {
+     "revenue": 10141000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1262000000,
+     "margin": 0.1244
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-24-090305",
+    "filed": "2024-08-05"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2023-01-01",
+   "end": "2023-06-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 45667000000,
+     "pretax_basis": "operating_income",
+     "pretax": 8112000000,
+     "margin": 0.1776
+    },
+    "bnsf": {
+     "revenue": 11847000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3264000000,
+     "margin": 0.2755
+    },
+    "bhe": {
+     "revenue": 12813000000,
+     "pretax_basis": "operating_income",
+     "pretax": 847000000,
+     "margin": 0.0661
+    },
+    "pilot": {
+     "revenue": 24262000000,
+     "pretax_basis": "operating_income",
+     "pretax": 322000000,
+     "margin": 0.0133
+    },
+    "manufacturing": {
+     "revenue": 37391000000,
+     "pretax_basis": "operating_income",
+     "pretax": 5714000000,
+     "margin": 0.1528
+    },
+    "mclane": {
+     "revenue": 25942000000,
+     "pretax_basis": "operating_income",
+     "pretax": 242000000,
+     "margin": 0.0093
+    },
+    "service_retail": {
+     "revenue": 20072000000,
+     "pretax_basis": "operating_income",
+     "pretax": 2483000000,
+     "margin": 0.1237
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-24-090305",
+    "filed": "2024-08-05"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2023-07-01",
+   "end": "2023-09-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 24308000000,
+     "pretax_basis": "operating_income",
+     "pretax": 5933000000,
+     "margin": 0.2441
+    },
+    "bnsf": {
+     "revenue": 5847000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1608000000,
+     "margin": 0.275
+    },
+    "bhe": {
+     "revenue": 7281000000,
+     "pretax_basis": "operating_income",
+     "pretax": -147000000,
+     "margin": -0.0202
+    },
+    "pilot": {
+     "revenue": 13166000000,
+     "pretax_basis": "operating_income",
+     "pretax": 291000000,
+     "margin": 0.0221
+    },
+    "manufacturing": {
+     "revenue": 19174000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3077000000,
+     "margin": 0.1605
+    },
+    "mclane": {
+     "revenue": 13477000000,
+     "pretax_basis": "operating_income",
+     "pretax": 116000000,
+     "margin": 0.0086
+    },
+    "service_retail": {
+     "revenue": 9946000000,
+     "pretax_basis": "operating_income",
+     "pretax": 1186000000,
+     "margin": 0.1192
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-24-120241",
+    "filed": "2024-11-04"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2023-01-01",
+   "end": "2023-09-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 69975000000,
+     "pretax_basis": "operating_income",
+     "pretax": 14045000000,
+     "margin": 0.2007
+    },
+    "bnsf": {
+     "revenue": 17694000000,
+     "pretax_basis": "operating_income",
+     "pretax": 4872000000,
+     "margin": 0.2753
+    },
+    "bhe": {
+     "revenue": 20094000000,
+     "pretax_basis": "operating_income",
+     "pretax": 700000000,
+     "margin": 0.0348
+    },
+    "pilot": {
+     "revenue": 37428000000,
+     "pretax_basis": "operating_income",
+     "pretax": 613000000,
+     "margin": 0.0164
+    },
+    "manufacturing": {
+     "revenue": 56565000000,
+     "pretax_basis": "operating_income",
+     "pretax": 8791000000,
+     "margin": 0.1554
+    },
+    "mclane": {
+     "revenue": 39419000000,
+     "pretax_basis": "operating_income",
+     "pretax": 358000000,
+     "margin": 0.0091
+    },
+    "service_retail": {
+     "revenue": 30018000000,
+     "pretax_basis": "operating_income",
+     "pretax": 3669000000,
+     "margin": 0.1222
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-24-120241",
+    "filed": "2024-11-04"
+   },
+   "basis": "operating_income"
+  },
+  {
+   "start": "2023-01-01",
+   "end": "2023-12-31",
+   "kind": "FY",
+   "segments": {
+    "insurance": {
+     "revenue": 95022000000,
+     "costs": 76528000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 18494000000,
+     "tax": 3497000000,
+     "capex": 68000000,
+     "dna": 401000000,
+     "margin": 0.1946
+    },
+    "bnsf": {
+     "revenue": 23876000000,
+     "interest": 1048000000,
+     "costs": 17262000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 6614000000,
+     "tax": 1527000000,
+     "capex": 3920000000,
+     "dna": 2627000000,
+     "margin": 0.277
+    },
+    "bhe": {
+     "revenue": 26008000000,
+     "interest": 2283000000,
+     "costs": 25068000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 940000000,
+     "tax": -2022000000,
+     "capex": 9148000000,
+     "dna": 4010000000,
+     "margin": 0.0361
+    },
+    "manufacturing": {
+     "revenue": 75405000000,
+     "interest": 784000000,
+     "costs": 63960000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 11445000000,
+     "tax": 2487000000,
+     "capex": 2714000000,
+     "dna": 2290000000,
+     "margin": 0.1518
+    },
+    "service_retail": {
+     "revenue": 39996000000,
+     "interest": 101000000,
+     "costs": 35275000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 4721000000,
+     "tax": 1135000000,
+     "capex": 2590000000,
+     "dna": 1335000000,
+     "margin": 0.118
+    },
+    "mclane": {
+     "revenue": 52607000000,
+     "costs": 52152000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 455000000,
+     "tax": 117000000,
+     "capex": 264000000,
+     "dna": 208000000,
+     "margin": 0.0086
+    },
+    "pilot": {
+     "revenue": 51739000000,
+     "costs": 50771000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 968000000,
+     "interest": 414000000,
+     "tax": 169000000,
+     "capex": 705000000,
+     "dna": 796000000,
+     "margin": 0.0187
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001193125-26-083899",
+    "filed": "2026-03-02"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "2023-10-01",
+   "end": "2023-12-31",
+   "kind": "Q",
+   "derived": "FY minus nine-month year-to-date",
+   "segments": {
+    "insurance": {
+     "revenue": 25047000000,
+     "pretax": 4449000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.1776
+    },
+    "bnsf": {
+     "revenue": 6182000000,
+     "pretax": 1742000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.2818
+    },
+    "bhe": {
+     "revenue": 5914000000,
+     "pretax": 240000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.0406
+    },
+    "manufacturing": {
+     "revenue": 18840000000,
+     "pretax": 2654000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.1409
+    },
+    "service_retail": {
+     "revenue": 9978000000,
+     "pretax": 1052000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.1054
+    },
+    "mclane": {
+     "revenue": 13188000000,
+     "pretax": 97000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.0074
+    },
+    "pilot": {
+     "revenue": 14311000000,
+     "pretax": 355000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.0248
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001193125-26-083899",
+    "filed": "2026-03-02"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "",
+   "end": "2023-12-31",
+   "kind": "instant",
+   "segments": {
+    "insurance": {
+     "goodwill": 16563000000,
+     "assets_ex_goodwill": 538860000000
+    },
+    "bnsf": {
+     "goodwill": 15350000000,
+     "assets_ex_goodwill": 79227000000
+    },
+    "bhe": {
+     "goodwill": 11804000000,
+     "assets_ex_goodwill": 124383000000
+    },
+    "manufacturing": {
+     "goodwill": 27831000000,
+     "assets_ex_goodwill": 115875000000
+    },
+    "pilot": {
+     "goodwill": 6605000000,
+     "assets_ex_goodwill": 21404000000
+    },
+    "mclane": {
+     "goodwill": 232000000,
+     "assets_ex_goodwill": 6861000000
+    },
+    "service_retail": {
+     "goodwill": 6241000000,
+     "assets_ex_goodwill": 34600000000
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0000950170-25-025210",
+    "filed": "2025-02-24"
+   },
+   "basis": null
+  },
+  {
+   "start": "2024-01-01",
+   "end": "2024-03-31",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 24638000000,
+     "costs": 18160000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 6478000000,
+     "tax": 1282000000,
+     "capex": 35000000,
+     "dna": 98000000,
+     "margin": 0.2629
+    },
+    "bnsf": {
+     "revenue": 5660000000,
+     "interest": 265000000,
+     "costs": 4141000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 1519000000,
+     "tax": 376000000,
+     "capex": 721000000,
+     "dna": 657000000,
+     "margin": 0.2684
+    },
+    "bhe": {
+     "revenue": 6277000000,
+     "interest": 645000000,
+     "costs": 5845000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 432000000,
+     "tax": -393000000,
+     "capex": 2153000000,
+     "dna": 994000000,
+     "margin": 0.0688
+    },
+    "manufacturing": {
+     "revenue": 18529000000,
+     "interest": 198000000,
+     "costs": 15615000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 2914000000,
+     "tax": 684000000,
+     "capex": 708000000,
+     "dna": 601000000,
+     "margin": 0.1573
+    },
+    "service_retail": {
+     "revenue": 9703000000,
+     "interest": 29000000,
+     "costs": 8795000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 908000000,
+     "tax": 214000000,
+     "capex": 579000000,
+     "dna": 367000000,
+     "margin": 0.0936
+    },
+    "pilot": {
+     "revenue": 12503000000,
+     "costs": 12433000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 70000000,
+     "interest": 94000000,
+     "tax": -1000000,
+     "capex": 172000000,
+     "dna": 245000000,
+     "margin": 0.0056
+    },
+    "mclane": {
+     "revenue": 12475000000,
+     "costs": 12310000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 165000000,
+     "interest": 5000000,
+     "tax": 42000000,
+     "capex": 25000000,
+     "dna": 50000000,
+     "margin": 0.0132
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-25-063112",
+    "filed": "2025-05-05"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "2024-04-01",
+   "end": "2024-06-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 26030000000,
+     "costs": 19115000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 6915000000,
+     "tax": 1332000000,
+     "capex": 14000000,
+     "dna": 100000000,
+     "margin": 0.2657
+    },
+    "bnsf": {
+     "revenue": 5805000000,
+     "interest": 267000000,
+     "costs": 4183000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 1622000000,
+     "tax": 395000000,
+     "capex": 1034000000,
+     "dna": 663000000,
+     "margin": 0.2794
+    },
+    "bhe": {
+     "revenue": 6492000000,
+     "interest": 625000000,
+     "costs": 6166000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 326000000,
+     "tax": -434000000,
+     "capex": 1975000000,
+     "dna": 988000000,
+     "margin": 0.0502
+    },
+    "manufacturing": {
+     "revenue": 19840000000,
+     "interest": 195000000,
+     "costs": 16711000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 3129000000,
+     "tax": 727000000,
+     "capex": 651000000,
+     "dna": 613000000,
+     "margin": 0.1577
+    },
+    "service_retail": {
+     "revenue": 9947000000,
+     "interest": 29000000,
+     "costs": 8978000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 969000000,
+     "tax": 244000000,
+     "capex": 583000000,
+     "dna": 376000000,
+     "margin": 0.0974
+    },
+    "pilot": {
+     "revenue": 12999000000,
+     "costs": 12800000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 199000000,
+     "interest": 83000000,
+     "tax": 28000000,
+     "capex": 224000000,
+     "dna": 251000000,
+     "margin": 0.0153
+    },
+    "mclane": {
+     "revenue": 12458000000,
+     "costs": 12316000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 142000000,
+     "interest": 5000000,
+     "tax": 34000000,
+     "capex": 54000000,
+     "dna": 49000000,
+     "margin": 0.0114
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-25-101578",
+    "filed": "2025-08-04"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "2024-01-01",
+   "end": "2024-06-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 50668000000,
+     "costs": 37275000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 13393000000,
+     "tax": 2614000000,
+     "capex": 49000000,
+     "dna": 198000000,
+     "margin": 0.2643
+    },
+    "bnsf": {
+     "revenue": 11465000000,
+     "interest": 532000000,
+     "costs": 8324000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 3141000000,
+     "tax": 771000000,
+     "capex": 1755000000,
+     "dna": 1320000000,
+     "margin": 0.274
+    },
+    "bhe": {
+     "revenue": 12769000000,
+     "interest": 1270000000,
+     "costs": 12011000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 758000000,
+     "tax": -827000000,
+     "capex": 4128000000,
+     "dna": 1982000000,
+     "margin": 0.0594
+    },
+    "manufacturing": {
+     "revenue": 38369000000,
+     "interest": 393000000,
+     "costs": 32326000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 6043000000,
+     "tax": 1411000000,
+     "capex": 1359000000,
+     "dna": 1214000000,
+     "margin": 0.1575
+    },
+    "service_retail": {
+     "revenue": 19650000000,
+     "interest": 58000000,
+     "costs": 17773000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 1877000000,
+     "tax": 458000000,
+     "capex": 1162000000,
+     "dna": 743000000,
+     "margin": 0.0955
+    },
+    "pilot": {
+     "revenue": 25502000000,
+     "costs": 25233000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 269000000,
+     "interest": 177000000,
+     "tax": 27000000,
+     "capex": 396000000,
+     "dna": 496000000,
+     "margin": 0.0105
+    },
+    "mclane": {
+     "revenue": 24933000000,
+     "costs": 24626000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 307000000,
+     "interest": 10000000,
+     "tax": 76000000,
+     "capex": 79000000,
+     "dna": 99000000,
+     "margin": 0.0123
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-25-101578",
+    "filed": "2025-08-04"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "2024-07-01",
+   "end": "2024-09-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 26664000000,
+     "costs": 21036000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 5628000000,
+     "tax": 1212000000,
+     "capex": 10000000,
+     "dna": 94000000,
+     "margin": 0.2111
+    },
+    "bnsf": {
+     "revenue": 5940000000,
+     "interest": 275000000,
+     "costs": 4094000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 1846000000,
+     "tax": 463000000,
+     "capex": 1024000000,
+     "dna": 644000000,
+     "margin": 0.3108
+    },
+    "bhe": {
+     "revenue": 7335000000,
+     "interest": 630000000,
+     "costs": 6234000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 1101000000,
+     "tax": -708000000,
+     "capex": 2108000000,
+     "dna": 997000000,
+     "margin": 0.1501
+    },
+    "manufacturing": {
+     "revenue": 19675000000,
+     "interest": 264000000,
+     "costs": 16540000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 3135000000,
+     "tax": 726000000,
+     "capex": 669000000,
+     "dna": 614000000,
+     "margin": 0.1593
+    },
+    "service_retail": {
+     "revenue": 9842000000,
+     "interest": 30000000,
+     "costs": 8965000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 877000000,
+     "tax": 218000000,
+     "capex": 656000000,
+     "dna": 398000000,
+     "margin": 0.0891
+    },
+    "pilot": {
+     "revenue": 10630000000,
+     "costs": 10413000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 217000000,
+     "interest": 69000000,
+     "tax": 18000000,
+     "capex": 174000000,
+     "dna": 254000000,
+     "margin": 0.0204
+    },
+    "mclane": {
+     "revenue": 12723000000,
+     "costs": 12578000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 145000000,
+     "interest": 4000000,
+     "tax": 38000000,
+     "capex": 60000000,
+     "dna": 50000000,
+     "margin": 0.0114
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-25-261548",
+    "filed": "2025-11-03"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "2024-01-01",
+   "end": "2024-09-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 77332000000,
+     "costs": 58311000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 19021000000,
+     "tax": 3826000000,
+     "capex": 59000000,
+     "dna": 292000000,
+     "margin": 0.246
+    },
+    "bnsf": {
+     "revenue": 17405000000,
+     "interest": 807000000,
+     "costs": 12418000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 4987000000,
+     "tax": 1234000000,
+     "capex": 2779000000,
+     "dna": 1964000000,
+     "margin": 0.2865
+    },
+    "bhe": {
+     "revenue": 20104000000,
+     "interest": 1900000000,
+     "costs": 18245000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 1859000000,
+     "tax": -1535000000,
+     "capex": 6236000000,
+     "dna": 2979000000,
+     "margin": 0.0925
+    },
+    "manufacturing": {
+     "revenue": 58044000000,
+     "interest": 657000000,
+     "costs": 48866000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 9178000000,
+     "tax": 2137000000,
+     "capex": 2028000000,
+     "dna": 1828000000,
+     "margin": 0.1581
+    },
+    "service_retail": {
+     "revenue": 29492000000,
+     "interest": 88000000,
+     "costs": 26738000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 2754000000,
+     "tax": 676000000,
+     "capex": 1818000000,
+     "dna": 1141000000,
+     "margin": 0.0934
+    },
+    "pilot": {
+     "revenue": 36132000000,
+     "costs": 35646000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 486000000,
+     "interest": 246000000,
+     "tax": 45000000,
+     "capex": 570000000,
+     "dna": 750000000,
+     "margin": 0.0135
+    },
+    "mclane": {
+     "revenue": 37656000000,
+     "costs": 37204000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 452000000,
+     "interest": 14000000,
+     "tax": 114000000,
+     "capex": 139000000,
+     "dna": 149000000,
+     "margin": 0.012
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-25-261548",
+    "filed": "2025-11-03"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "2024-01-01",
+   "end": "2024-12-31",
+   "kind": "FY",
+   "segments": {
+    "insurance": {
+     "revenue": 105069000000,
+     "costs": 76916000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 28153000000,
+     "tax": 5462000000,
+     "capex": 99000000,
+     "dna": 411000000,
+     "margin": 0.2679
+    },
+    "bnsf": {
+     "revenue": 23572000000,
+     "interest": 1078000000,
+     "costs": 16924000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 6648000000,
+     "tax": 1617000000,
+     "capex": 3690000000,
+     "dna": 2621000000,
+     "margin": 0.282
+    },
+    "bhe": {
+     "revenue": 26348000000,
+     "interest": 2528000000,
+     "costs": 24056000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 2292000000,
+     "tax": -1871000000,
+     "capex": 9013000000,
+     "dna": 4003000000,
+     "margin": 0.087
+    },
+    "manufacturing": {
+     "revenue": 77231000000,
+     "interest": 934000000,
+     "costs": 65336000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 11895000000,
+     "tax": 2598000000,
+     "capex": 2779000000,
+     "dna": 2422000000,
+     "margin": 0.154
+    },
+    "service_retail": {
+     "revenue": 39874000000,
+     "interest": 118000000,
+     "costs": 36174000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 3700000000,
+     "tax": 912000000,
+     "capex": 2360000000,
+     "dna": 1522000000,
+     "margin": 0.0928
+    },
+    "mclane": {
+     "revenue": 51907000000,
+     "costs": 51273000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 634000000,
+     "interest": 22000000,
+     "tax": 152000000,
+     "capex": 236000000,
+     "dna": 217000000,
+     "margin": 0.0122
+    },
+    "pilot": {
+     "revenue": 46891000000,
+     "costs": 46277000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 614000000,
+     "interest": 302000000,
+     "capex": 799000000,
+     "dna": 1012000000,
+     "margin": 0.0131
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001193125-26-083899",
+    "filed": "2026-03-02"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "2024-10-01",
+   "end": "2024-12-31",
+   "kind": "Q",
+   "derived": "FY minus nine-month year-to-date",
+   "segments": {
+    "insurance": {
+     "revenue": 27737000000,
+     "costs": 18605000000,
+     "pretax": 9132000000,
+     "tax": 1636000000,
+     "dna": 119000000,
+     "capex": 40000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.3292
+    },
+    "bnsf": {
+     "revenue": 6167000000,
+     "costs": 4506000000,
+     "pretax": 1661000000,
+     "tax": 383000000,
+     "dna": 657000000,
+     "capex": 911000000,
+     "interest": 271000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.2693
+    },
+    "bhe": {
+     "revenue": 6244000000,
+     "costs": 5811000000,
+     "pretax": 433000000,
+     "tax": -336000000,
+     "dna": 1024000000,
+     "capex": 2777000000,
+     "interest": 628000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.0693
+    },
+    "manufacturing": {
+     "revenue": 19187000000,
+     "costs": 16470000000,
+     "pretax": 2717000000,
+     "tax": 461000000,
+     "dna": 594000000,
+     "capex": 751000000,
+     "interest": 277000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.1416
+    },
+    "service_retail": {
+     "revenue": 10382000000,
+     "costs": 9436000000,
+     "pretax": 946000000,
+     "tax": 236000000,
+     "dna": 381000000,
+     "capex": 542000000,
+     "interest": 30000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.0911
+    },
+    "mclane": {
+     "revenue": 14251000000,
+     "costs": 14069000000,
+     "pretax": 182000000,
+     "tax": 38000000,
+     "dna": 68000000,
+     "capex": 97000000,
+     "interest": 8000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.0128
+    },
+    "pilot": {
+     "revenue": 10759000000,
+     "costs": 10631000000,
+     "pretax": 128000000,
+     "dna": 262000000,
+     "capex": 229000000,
+     "interest": 56000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.0119
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001193125-26-083899",
+    "filed": "2026-03-02"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "",
+   "end": "2024-12-31",
+   "kind": "instant",
+   "segments": {
+    "insurance": {
+     "goodwill": 16557000000,
+     "assets_ex_goodwill": 539884000000
+    },
+    "bnsf": {
+     "goodwill": 15351000000,
+     "assets_ex_goodwill": 80813000000
+    },
+    "bhe": {
+     "goodwill": 11669000000,
+     "assets_ex_goodwill": 128276000000
+    },
+    "manufacturing": {
+     "goodwill": 27716000000,
+     "assets_ex_goodwill": 119860000000
+    },
+    "service_retail": {
+     "goodwill": 5878000000,
+     "assets_ex_goodwill": 37198000000
+    },
+    "mclane": {
+     "goodwill": 232000000,
+     "assets_ex_goodwill": 7165000000
+    },
+    "pilot": {
+     "goodwill": 6477000000,
+     "assets_ex_goodwill": 19652000000
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001193125-26-083899",
+    "filed": "2026-03-02"
+   },
+   "basis": null
+  },
+  {
+   "start": "2025-01-01",
+   "end": "2025-03-31",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 25375000000,
+     "costs": 20092000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 5283000000,
+     "tax": 1054000000,
+     "capex": 24000000,
+     "dna": 107000000,
+     "margin": 0.2082
+    },
+    "bnsf": {
+     "revenue": 5720000000,
+     "interest": 272000000,
+     "costs": 4117000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 1603000000,
+     "tax": 389000000,
+     "capex": 652000000,
+     "dna": 671000000,
+     "margin": 0.2802
+    },
+    "bhe": {
+     "revenue": 6356000000,
+     "interest": 646000000,
+     "costs": 5633000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 723000000,
+     "tax": -422000000,
+     "capex": 2128000000,
+     "dna": 1019000000,
+     "margin": 0.1138
+    },
+    "manufacturing": {
+     "revenue": 18766000000,
+     "interest": 285000000,
+     "costs": 16050000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 2716000000,
+     "tax": 611000000,
+     "capex": 707000000,
+     "dna": 610000000,
+     "margin": 0.1447
+    },
+    "service_retail": {
+     "revenue": 10137000000,
+     "interest": 27000000,
+     "costs": 9196000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 941000000,
+     "tax": 225000000,
+     "capex": 544000000,
+     "dna": 399000000,
+     "margin": 0.0928
+    },
+    "mclane": {
+     "revenue": 12175000000,
+     "costs": 11994000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 181000000,
+     "interest": 7000000,
+     "tax": 45000000,
+     "capex": 22000000,
+     "dna": 49000000,
+     "margin": 0.0149
+    },
+    "pilot": {
+     "revenue": 10430000000,
+     "costs": 10262000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 168000000,
+     "interest": 72000000,
+     "tax": 37000000,
+     "capex": 204000000,
+     "dna": 257000000,
+     "margin": 0.0161
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-26-202243",
+    "filed": "2026-05-04"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "",
+   "end": "2025-03-31",
+   "kind": "instant",
+   "segments": {
+    "insurance": {
+     "goodwill": 16557000000,
+     "assets_ex_goodwill": 532016000000
+    },
+    "bnsf": {
+     "goodwill": 15351000000,
+     "assets_ex_goodwill": 81559000000
+    },
+    "bhe": {
+     "goodwill": 11683000000,
+     "assets_ex_goodwill": 130643000000
+    },
+    "manufacturing": {
+     "goodwill": 27829000000,
+     "assets_ex_goodwill": 120901000000
+    },
+    "pilot": {
+     "goodwill": 6477000000,
+     "assets_ex_goodwill": 19460000000
+    },
+    "mclane": {
+     "goodwill": 232000000,
+     "assets_ex_goodwill": 7283000000
+    },
+    "service_retail": {
+     "goodwill": 5878000000,
+     "assets_ex_goodwill": 38130000000
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-25-063112",
+    "filed": "2025-05-05"
+   },
+   "basis": null
+  },
+  {
+   "start": "2025-04-01",
+   "end": "2025-06-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 26248000000,
+     "costs": 19711000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 6537000000,
+     "tax": 1177000000,
+     "capex": 11000000,
+     "dna": 110000000,
+     "margin": 0.249
+    },
+    "bnsf": {
+     "revenue": 5769000000,
+     "interest": 270000000,
+     "costs": 3960000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 1809000000,
+     "tax": 343000000,
+     "capex": 947000000,
+     "dna": 679000000,
+     "margin": 0.3136
+    },
+    "bhe": {
+     "revenue": 6418000000,
+     "interest": 664000000,
+     "costs": 6033000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 385000000,
+     "tax": -357000000,
+     "capex": 2445000000,
+     "dna": 1064000000,
+     "margin": 0.06
+    },
+    "manufacturing": {
+     "revenue": 19969000000,
+     "interest": 298000000,
+     "costs": 16722000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 3247000000,
+     "tax": 701000000,
+     "capex": 603000000,
+     "dna": 612000000,
+     "margin": 0.1626
+    },
+    "service_retail": {
+     "revenue": 10688000000,
+     "interest": 29000000,
+     "costs": 9583000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 1105000000,
+     "tax": 243000000,
+     "capex": 553000000,
+     "dna": 404000000,
+     "margin": 0.1034
+    },
+    "mclane": {
+     "revenue": 12601000000,
+     "costs": 12425000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 176000000,
+     "interest": 6000000,
+     "tax": 43000000,
+     "capex": 45000000,
+     "dna": 47000000,
+     "margin": 0.014
+    },
+    "pilot": {
+     "revenue": 10109000000,
+     "costs": 9990000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 119000000,
+     "interest": 49000000,
+     "tax": 26000000,
+     "capex": 254000000,
+     "dna": 260000000,
+     "margin": 0.0118
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-26-341032",
+    "filed": "2026-08-10"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "2025-01-01",
+   "end": "2025-06-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 51623000000,
+     "costs": 39803000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 11820000000,
+     "tax": 2231000000,
+     "capex": 35000000,
+     "dna": 217000000,
+     "margin": 0.229
+    },
+    "bnsf": {
+     "revenue": 11489000000,
+     "interest": 542000000,
+     "costs": 8077000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 3412000000,
+     "tax": 732000000,
+     "capex": 1599000000,
+     "dna": 1350000000,
+     "margin": 0.297
+    },
+    "bhe": {
+     "revenue": 12774000000,
+     "interest": 1310000000,
+     "costs": 11666000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 1108000000,
+     "tax": -779000000,
+     "capex": 4573000000,
+     "dna": 2083000000,
+     "margin": 0.0867
+    },
+    "manufacturing": {
+     "revenue": 38735000000,
+     "interest": 583000000,
+     "costs": 32772000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 5963000000,
+     "tax": 1312000000,
+     "capex": 1310000000,
+     "dna": 1222000000,
+     "margin": 0.1539
+    },
+    "service_retail": {
+     "revenue": 20825000000,
+     "interest": 56000000,
+     "costs": 18779000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 2046000000,
+     "tax": 468000000,
+     "capex": 1097000000,
+     "dna": 803000000,
+     "margin": 0.0982
+    },
+    "mclane": {
+     "revenue": 24776000000,
+     "costs": 24419000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 357000000,
+     "interest": 13000000,
+     "tax": 88000000,
+     "capex": 67000000,
+     "dna": 96000000,
+     "margin": 0.0144
+    },
+    "pilot": {
+     "revenue": 20539000000,
+     "costs": 20252000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 287000000,
+     "interest": 121000000,
+     "tax": 63000000,
+     "capex": 458000000,
+     "dna": 517000000,
+     "margin": 0.014
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-26-341032",
+    "filed": "2026-08-10"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "",
+   "end": "2025-06-30",
+   "kind": "instant",
+   "segments": {
+    "insurance": {
+     "goodwill": 16557000000,
+     "assets_ex_goodwill": 537326000000
+    },
+    "bnsf": {
+     "goodwill": 15351000000,
+     "assets_ex_goodwill": 81277000000
+    },
+    "bhe": {
+     "goodwill": 11804000000,
+     "assets_ex_goodwill": 132997000000
+    },
+    "manufacturing": {
+     "goodwill": 27951000000,
+     "assets_ex_goodwill": 122431000000
+    },
+    "pilot": {
+     "goodwill": 6478000000,
+     "assets_ex_goodwill": 19410000000
+    },
+    "mclane": {
+     "goodwill": 232000000,
+     "assets_ex_goodwill": 7185000000
+    },
+    "service_retail": {
+     "goodwill": 5878000000,
+     "assets_ex_goodwill": 38356000000
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0000950170-25-101578",
+    "filed": "2025-08-04"
+   },
+   "basis": null
+  },
+  {
+   "start": "2025-07-01",
+   "end": "2025-09-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 26181000000,
+     "costs": 19302000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 6879000000,
+     "tax": 1329000000,
+     "capex": 30000000,
+     "dna": 112000000,
+     "margin": 0.2627
+    },
+    "bnsf": {
+     "revenue": 6039000000,
+     "interest": 279000000,
+     "costs": 4127000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 1912000000,
+     "tax": 463000000,
+     "capex": 998000000,
+     "dna": 684000000,
+     "margin": 0.3166
+    },
+    "bhe": {
+     "revenue": 7304000000,
+     "interest": 658000000,
+     "costs": 6391000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 913000000,
+     "tax": -606000000,
+     "capex": 2954000000,
+     "dna": 1035000000,
+     "margin": 0.125
+    },
+    "manufacturing": {
+     "revenue": 20047000000,
+     "interest": 303000000,
+     "costs": 16463000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 3584000000,
+     "tax": 768000000,
+     "capex": 646000000,
+     "dna": 606000000,
+     "margin": 0.1788
+    },
+    "service_retail": {
+     "revenue": 10593000000,
+     "interest": 28000000,
+     "costs": 9613000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 980000000,
+     "tax": 265000000,
+     "capex": 677000000,
+     "dna": 413000000,
+     "margin": 0.0925
+    },
+    "pilot": {
+     "revenue": 10882000000,
+     "costs": 10899000000,
+     "pretax_basis": "pretax_income",
+     "pretax": -17000000,
+     "interest": 53000000,
+     "tax": -3000000,
+     "capex": 233000000,
+     "dna": 266000000,
+     "margin": -0.0016
+    },
+    "mclane": {
+     "revenue": 13191000000,
+     "costs": 13018000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 173000000,
+     "interest": 6000000,
+     "tax": 42000000,
+     "capex": 48000000,
+     "dna": 50000000,
+     "margin": 0.0131
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-25-261548",
+    "filed": "2025-11-03"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "2025-01-01",
+   "end": "2025-09-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 77804000000,
+     "costs": 59105000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 18699000000,
+     "tax": 3560000000,
+     "capex": 65000000,
+     "dna": 329000000,
+     "margin": 0.2403
+    },
+    "bnsf": {
+     "revenue": 17528000000,
+     "interest": 821000000,
+     "costs": 12204000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 5324000000,
+     "tax": 1195000000,
+     "capex": 2597000000,
+     "dna": 2034000000,
+     "margin": 0.3037
+    },
+    "bhe": {
+     "revenue": 20078000000,
+     "interest": 1968000000,
+     "costs": 18057000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 2021000000,
+     "tax": -1385000000,
+     "capex": 7527000000,
+     "dna": 3118000000,
+     "margin": 0.1007
+    },
+    "manufacturing": {
+     "revenue": 58782000000,
+     "interest": 886000000,
+     "costs": 49235000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 9547000000,
+     "tax": 2080000000,
+     "capex": 1956000000,
+     "dna": 1828000000,
+     "margin": 0.1624
+    },
+    "service_retail": {
+     "revenue": 31418000000,
+     "interest": 84000000,
+     "costs": 28392000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 3026000000,
+     "tax": 733000000,
+     "capex": 1774000000,
+     "dna": 1216000000,
+     "margin": 0.0963
+    },
+    "pilot": {
+     "revenue": 31421000000,
+     "costs": 31151000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 270000000,
+     "interest": 174000000,
+     "tax": 60000000,
+     "capex": 691000000,
+     "dna": 783000000,
+     "margin": 0.0086
+    },
+    "mclane": {
+     "revenue": 37967000000,
+     "costs": 37437000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 530000000,
+     "interest": 19000000,
+     "tax": 130000000,
+     "capex": 115000000,
+     "dna": 146000000,
+     "margin": 0.014
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-25-261548",
+    "filed": "2025-11-03"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "",
+   "end": "2025-09-30",
+   "kind": "instant",
+   "segments": {
+    "insurance": {
+     "goodwill": 16557000000,
+     "assets_ex_goodwill": 593230000000
+    },
+    "bnsf": {
+     "goodwill": 15351000000,
+     "assets_ex_goodwill": 81537000000
+    },
+    "bhe": {
+     "goodwill": 11756000000,
+     "assets_ex_goodwill": 134614000000
+    },
+    "manufacturing": {
+     "goodwill": 28273000000,
+     "assets_ex_goodwill": 122969000000
+    },
+    "service_retail": {
+     "goodwill": 5879000000,
+     "assets_ex_goodwill": 39320000000
+    },
+    "pilot": {
+     "goodwill": 6477000000,
+     "assets_ex_goodwill": 19192000000
+    },
+    "mclane": {
+     "goodwill": 232000000,
+     "assets_ex_goodwill": 7344000000
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-25-261548",
+    "filed": "2025-11-03"
+   },
+   "basis": null
+  },
+  {
+   "start": "2025-01-01",
+   "end": "2025-12-31",
+   "kind": "FY",
+   "segments": {
+    "insurance": {
+     "revenue": 104212000000,
+     "costs": 79491000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 24721000000,
+     "tax": 4949000000,
+     "capex": 109000000,
+     "dna": 438000000,
+     "margin": 0.2372
+    },
+    "bnsf": {
+     "revenue": 23533000000,
+     "interest": 1098000000,
+     "costs": 16358000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 7175000000,
+     "tax": 1699000000,
+     "capex": 3796000000,
+     "dna": 2722000000,
+     "margin": 0.3049
+    },
+    "bhe": {
+     "revenue": 26297000000,
+     "interest": 2642000000,
+     "costs": 23955000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 2342000000,
+     "tax": -1785000000,
+     "capex": 10589000000,
+     "dna": 4220000000,
+     "margin": 0.0891
+    },
+    "manufacturing": {
+     "revenue": 78487000000,
+     "interest": 1211000000,
+     "costs": 65916000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 12571000000,
+     "tax": 2529000000,
+     "capex": 2681000000,
+     "dna": 2464000000,
+     "margin": 0.1602
+    },
+    "service_retail": {
+     "revenue": 42647000000,
+     "interest": 113000000,
+     "costs": 38608000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 4039000000,
+     "tax": 982000000,
+     "capex": 2604000000,
+     "dna": 1643000000,
+     "margin": 0.0947
+    },
+    "mclane": {
+     "revenue": 50998000000,
+     "costs": 50322000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 676000000,
+     "interest": 32000000,
+     "tax": 171000000,
+     "capex": 207000000,
+     "dna": 214000000,
+     "margin": 0.0133
+    },
+    "pilot": {
+     "revenue": 42198000000,
+     "costs": 42008000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 190000000,
+     "interest": 227000000,
+     "tax": 27000000,
+     "capex": 941000000,
+     "dna": 1095000000,
+     "margin": 0.0045
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001193125-26-083899",
+    "filed": "2026-03-02"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "2025-10-01",
+   "end": "2025-12-31",
+   "kind": "Q",
+   "derived": "FY minus nine-month year-to-date",
+   "segments": {
+    "insurance": {
+     "revenue": 26408000000,
+     "costs": 20386000000,
+     "pretax": 6022000000,
+     "tax": 1389000000,
+     "dna": 109000000,
+     "capex": 44000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.228
+    },
+    "bnsf": {
+     "revenue": 6005000000,
+     "costs": 4154000000,
+     "pretax": 1851000000,
+     "tax": 504000000,
+     "dna": 688000000,
+     "capex": 1199000000,
+     "interest": 277000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.3082
+    },
+    "bhe": {
+     "revenue": 6219000000,
+     "costs": 5898000000,
+     "pretax": 321000000,
+     "tax": -400000000,
+     "dna": 1102000000,
+     "capex": 3062000000,
+     "interest": 674000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.0516
+    },
+    "manufacturing": {
+     "revenue": 19705000000,
+     "costs": 16681000000,
+     "pretax": 3024000000,
+     "tax": 449000000,
+     "dna": 636000000,
+     "capex": 725000000,
+     "interest": 325000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.1535
+    },
+    "service_retail": {
+     "revenue": 11229000000,
+     "costs": 10216000000,
+     "pretax": 1013000000,
+     "tax": 249000000,
+     "dna": 427000000,
+     "capex": 830000000,
+     "interest": 29000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.0902
+    },
+    "mclane": {
+     "revenue": 13031000000,
+     "costs": 12885000000,
+     "pretax": 146000000,
+     "tax": 41000000,
+     "dna": 68000000,
+     "capex": 92000000,
+     "interest": 13000000,
+     "pretax_basis": "pretax_income",
+     "margin": 0.0112
+    },
+    "pilot": {
+     "revenue": 10777000000,
+     "costs": 10857000000,
+     "pretax": -80000000,
+     "tax": -33000000,
+     "dna": 312000000,
+     "capex": 250000000,
+     "interest": 53000000,
+     "pretax_basis": "pretax_income",
+     "margin": -0.0074
+    }
+   },
+   "source": {
+    "form": "10-K",
+    "accn": "0001193125-26-083899",
+    "filed": "2026-03-02"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "",
+   "end": "2025-12-31",
+   "kind": "instant",
+   "segments": {
+    "insurance": {
+     "goodwill": 16557000000,
+     "assets_ex_goodwill": 571145000000
+    },
+    "bnsf": {
+     "goodwill": 15351000000,
+     "assets_ex_goodwill": 82532000000
+    },
+    "bhe": {
+     "goodwill": 11778000000,
+     "assets_ex_goodwill": 136515000000
+    },
+    "manufacturing": {
+     "goodwill": 26928000000,
+     "assets_ex_goodwill": 122132000000
+    },
+    "service_retail": {
+     "goodwill": 5682000000,
+     "assets_ex_goodwill": 39124000000
+    },
+    "mclane": {
+     "goodwill": 232000000,
+     "assets_ex_goodwill": 7135000000
+    },
+    "pilot": {
+     "goodwill": 6546000000,
+     "assets_ex_goodwill": 18828000000
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-26-341032",
+    "filed": "2026-08-10"
+   },
+   "basis": null
+  },
+  {
+   "start": "2026-01-01",
+   "end": "2026-03-31",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 25312000000,
+     "costs": 19743000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 5569000000,
+     "tax": 1172000000,
+     "capex": 25000000,
+     "dna": 101000000,
+     "margin": 0.22
+    },
+    "bnsf": {
+     "revenue": 5994000000,
+     "interest": 277000000,
+     "costs": 4174000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 1820000000,
+     "tax": 443000000,
+     "capex": 744000000,
+     "dna": 690000000,
+     "margin": 0.3036
+    },
+    "bhe": {
+     "revenue": 6661000000,
+     "interest": 700000000,
+     "costs": 5917000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 744000000,
+     "tax": -430000000,
+     "capex": 2418000000,
+     "dna": 1089000000,
+     "margin": 0.1117
+    },
+    "manufacturing": {
+     "revenue": 20672000000,
+     "interest": 344000000,
+     "costs": 17613000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 3059000000,
+     "tax": 716000000,
+     "capex": 904000000,
+     "dna": 746000000,
+     "margin": 0.148
+    },
+    "service_retail": {
+     "revenue": 10989000000,
+     "interest": 26000000,
+     "costs": 9908000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 1081000000,
+     "tax": 261000000,
+     "capex": 583000000,
+     "dna": 408000000,
+     "margin": 0.0984
+    },
+    "mclane": {
+     "revenue": 11936000000,
+     "costs": 11792000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 144000000,
+     "interest": 8000000,
+     "tax": 34000000,
+     "capex": 50000000,
+     "dna": 50000000,
+     "margin": 0.0121
+    },
+    "pilot": {
+     "revenue": 11245000000,
+     "costs": 11295000000,
+     "pretax_basis": "pretax_income",
+     "pretax": -50000000,
+     "interest": 47000000,
+     "tax": -9000000,
+     "capex": 262000000,
+     "dna": 281000000,
+     "margin": -0.0044
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-26-202243",
+    "filed": "2026-05-04"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "",
+   "end": "2026-03-31",
+   "kind": "instant",
+   "segments": {
+    "insurance": {
+     "goodwill": 16557000000,
+     "assets_ex_goodwill": 587951000000
+    },
+    "bnsf": {
+     "goodwill": 15351000000,
+     "assets_ex_goodwill": 82747000000
+    },
+    "bhe": {
+     "goodwill": 11656000000,
+     "assets_ex_goodwill": 139581000000
+    },
+    "manufacturing": {
+     "goodwill": 27154000000,
+     "assets_ex_goodwill": 133396000000
+    },
+    "service_retail": {
+     "goodwill": 5684000000,
+     "assets_ex_goodwill": 40022000000
+    },
+    "mclane": {
+     "goodwill": 232000000,
+     "assets_ex_goodwill": 7288000000
+    },
+    "pilot": {
+     "goodwill": 6546000000,
+     "assets_ex_goodwill": 19567000000
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-26-202243",
+    "filed": "2026-05-04"
+   },
+   "basis": null
+  },
+  {
+   "start": "2026-04-01",
+   "end": "2026-06-30",
+   "kind": "Q",
+   "segments": {
+    "insurance": {
+     "revenue": 26176000000,
+     "costs": 20311000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 5865000000,
+     "tax": 1074000000,
+     "capex": 38000000,
+     "dna": 108000000,
+     "margin": 0.2241
+    },
+    "bnsf": {
+     "revenue": 6601000000,
+     "interest": 276000000,
+     "costs": 4540000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 2061000000,
+     "tax": 503000000,
+     "capex": 996000000,
+     "dna": 698000000,
+     "margin": 0.3122
+    },
+    "bhe": {
+     "revenue": 6735000000,
+     "interest": 745000000,
+     "costs": 6131000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 604000000,
+     "tax": -333000000,
+     "capex": 2531000000,
+     "dna": 1048000000,
+     "margin": 0.0897
+    },
+    "manufacturing": {
+     "revenue": 22568000000,
+     "interest": 331000000,
+     "costs": 18451000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 4117000000,
+     "tax": 925000000,
+     "capex": 955000000,
+     "dna": 868000000,
+     "margin": 0.1824
+    },
+    "service_retail": {
+     "revenue": 11884000000,
+     "interest": 27000000,
+     "costs": 10618000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 1266000000,
+     "tax": 299000000,
+     "capex": 799000000,
+     "dna": 412000000,
+     "margin": 0.1065
+    },
+    "mclane": {
+     "revenue": 12118000000,
+     "costs": 11945000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 173000000,
+     "interest": 8000000,
+     "tax": 45000000,
+     "capex": 54000000,
+     "dna": 48000000,
+     "margin": 0.0143
+    },
+    "pilot": {
+     "revenue": 14932000000,
+     "costs": 14642000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 290000000,
+     "interest": 50000000,
+     "tax": 65000000,
+     "capex": 272000000,
+     "dna": 279000000,
+     "margin": 0.0194
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-26-341032",
+    "filed": "2026-08-10"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "2026-01-01",
+   "end": "2026-06-30",
+   "kind": "YTD",
+   "segments": {
+    "insurance": {
+     "revenue": 51488000000,
+     "costs": 40054000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 11434000000,
+     "tax": 2246000000,
+     "capex": 63000000,
+     "dna": 209000000,
+     "margin": 0.2221
+    },
+    "bnsf": {
+     "revenue": 12595000000,
+     "interest": 553000000,
+     "costs": 8714000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 3881000000,
+     "tax": 946000000,
+     "capex": 1740000000,
+     "dna": 1388000000,
+     "margin": 0.3081
+    },
+    "bhe": {
+     "revenue": 13396000000,
+     "interest": 1445000000,
+     "costs": 12048000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 1348000000,
+     "tax": -763000000,
+     "capex": 4949000000,
+     "dna": 2137000000,
+     "margin": 0.1006
+    },
+    "manufacturing": {
+     "revenue": 43240000000,
+     "interest": 675000000,
+     "costs": 36064000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 7176000000,
+     "tax": 1641000000,
+     "capex": 1859000000,
+     "dna": 1614000000,
+     "margin": 0.166
+    },
+    "service_retail": {
+     "revenue": 22873000000,
+     "interest": 53000000,
+     "costs": 20526000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 2347000000,
+     "tax": 560000000,
+     "capex": 1382000000,
+     "dna": 820000000,
+     "margin": 0.1026
+    },
+    "mclane": {
+     "revenue": 24054000000,
+     "costs": 23737000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 317000000,
+     "interest": 16000000,
+     "tax": 79000000,
+     "capex": 104000000,
+     "dna": 98000000,
+     "margin": 0.0132
+    },
+    "pilot": {
+     "revenue": 26177000000,
+     "costs": 25937000000,
+     "pretax_basis": "pretax_income",
+     "pretax": 240000000,
+     "interest": 97000000,
+     "tax": 56000000,
+     "capex": 534000000,
+     "dna": 560000000,
+     "margin": 0.0092
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-26-341032",
+    "filed": "2026-08-10"
+   },
+   "basis": "pretax_income"
+  },
+  {
+   "start": "",
+   "end": "2026-06-30",
+   "kind": "instant",
+   "segments": {
+    "insurance": {
+     "goodwill": 16557000000,
+     "assets_ex_goodwill": 597919000000
+    },
+    "bnsf": {
+     "goodwill": 15351000000,
+     "assets_ex_goodwill": 82794000000
+    },
+    "bhe": {
+     "goodwill": 11630000000,
+     "assets_ex_goodwill": 142651000000
+    },
+    "manufacturing": {
+     "goodwill": 27172000000,
+     "assets_ex_goodwill": 136140000000
+    },
+    "service_retail": {
+     "goodwill": 5685000000,
+     "assets_ex_goodwill": 40705000000
+    },
+    "mclane": {
+     "goodwill": 232000000,
+     "assets_ex_goodwill": 7429000000
+    },
+    "pilot": {
+     "goodwill": 6546000000,
+     "assets_ex_goodwill": 19715000000
+    }
+   },
+   "source": {
+    "form": "10-Q",
+    "accn": "0001193125-26-341032",
+    "filed": "2026-08-10"
+   },
+   "basis": null
+  }
+ ]
+}
