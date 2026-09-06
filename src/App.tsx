@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { CapitalMap } from '@/components/CapitalMap'
 import { Panel } from '@/components/Panel'
 import { SegmentTable } from '@/components/SegmentTable'
 import { TrendChart, type Series } from '@/components/TrendChart'
@@ -91,6 +92,27 @@ function Dashboard({ data }: { data: Dataset }) {
     return row
   })
 
+  const hasCapexData = capexRows.length >= 4
+  const capitalMapData = useMemo(() => {
+    if (!hasCapexData) return []
+    const lastCapexIdx = qs.findIndex((p) => p === capexRows[capexRows.length - 1])
+    return data.segments
+      .map((s) => {
+        const pretax = ttm(qs, lastCapexIdx, s.key, 'pretax')
+        const capex = ttm(qs, lastCapexIdx, s.key, 'capex')
+        if (pretax === null || capex === null) return null
+        return {
+          key: s.key,
+          label: s.label,
+          color: COLORS[s.key] ?? '#7d8798',
+          pretax,
+          capex,
+          netFlow: pretax - capex,
+        }
+      })
+      .filter((d): d is NonNullable<typeof d> => d !== null)
+  }, [data.segments, qs, capexRows, hasCapexData])
+
   const totalRev = rows.reduce((a, r) => a + (r.revenue ?? 0), 0)
   const totalPretax = rows.reduce((a, r) => a + (r.pretax ?? 0), 0)
   const best = [...rows].sort((a, b) => (b.margin ?? 0) - (a.margin ?? 0))[0]
@@ -135,6 +157,40 @@ function Dashboard({ data }: { data: Dataset }) {
         >
           <SegmentTable rows={rows} period={latest} prior={prior} />
         </Panel>
+
+        {hasCapexData && capitalMapData.length > 0 && (
+          <Panel
+            title="The capital map"
+            description="Buffett's allocation job in one chart: which businesses throw off cash, and which absorb it. Net capital flow is trailing-twelve-month pretax earnings minus capex."
+          >
+            <CapitalMap data={capitalMapData} height={300} />
+            <div className="mt-4 grid gap-4 text-[13px] leading-relaxed text-muted sm:grid-cols-2">
+              <div>
+                <h3 className="mb-1 font-medium text-bright">The engines</h3>
+                <p>
+                  Insurance generates billions with almost no physical plant — float
+                  and underwriting profits, not factories. Manufacturing earns well
+                  on modest reinvestment. These are the businesses that fund everything
+                  else.
+                </p>
+              </div>
+              <div>
+                <h3 className="mb-1 font-medium text-bright">The sinks</h3>
+                <p>
+                  Utilities and the railroad eat capital. BHE alone pours more into
+                  power plants and transmission than it earns in pretax income —
+                  that's the regulated-utility bargain. BNSF keeps the locomotives
+                  running with continuous reinvestment.
+                </p>
+              </div>
+            </div>
+            <p className="mt-4 text-[12px] leading-relaxed text-muted">
+              Capex is only disclosed per segment from 2024, when ASU 2023-07
+              required expanded segment reporting. Earlier periods have revenue
+              and earnings only.
+            </p>
+          </Panel>
+        )}
 
         <Panel
           title="Revenue mix"
