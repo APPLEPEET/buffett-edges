@@ -13,14 +13,6 @@ import {
   YAxis,
 } from 'recharts'
 
-/**
- * Generalised from the MacroDashboard `IndicatorChart`: same parameterised
- * title / formatter / axis-bound shape, but it renders data passed in rather
- * than fetching its own endpoint. The whole dataset is one static JSON file
- * loaded once at the top of the app, so per-chart fetching would only refetch
- * what we already have.
- */
-
 export interface Series {
   key: string
   label: string
@@ -36,10 +28,9 @@ interface TrendChartProps {
   formatValue?: (v: number) => string
   formatAxis?: (v: number) => string
   yDomain?: [number | 'auto' | 'dataMin', number | 'auto' | 'dataMax']
-  referenceZero?: boolean
 }
 
-const AXIS = { stroke: '#7d8798', fontSize: 11 }
+const AXIS = { fill: '#6b7a68', fontSize: 11 }
 
 export function TrendChart({
   data,
@@ -54,7 +45,7 @@ export function TrendChart({
   if (!data.length) {
     return (
       <div
-        className="flex items-center justify-center rounded border border-dashed border-line text-[13px] text-muted"
+        className="flex items-center justify-center rounded-lg border border-dashed border-rule text-muted"
         style={{ height }}
       >
         No data for this view
@@ -72,27 +63,29 @@ export function TrendChart({
 
   const tooltip = (
     <Tooltip
+      cursor={{ fill: 'rgba(16, 185, 129, 0.05)' }}
       contentStyle={{
-        background: '#141821',
-        border: '1px solid #232935',
-        borderRadius: 6,
-        fontSize: 12,
+        background: '#1c211a',
+        border: '1px solid #2a3128',
+        borderRadius: 8,
+        fontSize: 13,
+        boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
       }}
-      labelStyle={{ color: '#e8ecf3', marginBottom: 4, fontWeight: 600 }}
-      itemStyle={{ padding: '1px 0' }}
-      formatter={(v) => (typeof v === 'number' ? formatValue(v) : '—')}
+      labelStyle={{ color: '#e8ede6', marginBottom: 6, fontWeight: 500 }}
+      itemStyle={{ padding: '2px 0' }}
+      formatter={(v) => (typeof v === 'number' ? formatValue(v) : '-')}
     />
   )
 
   return (
     <ResponsiveContainer width="100%" height={height}>
-      <Chart data={data} margin={{ top: 4, right: 8, bottom: 0, left: -8 }}>
-        <CartesianGrid stroke="#232935" vertical={false} />
+      <Chart data={data} margin={{ top: 8, right: 8, bottom: 0, left: -8 }}>
+        <CartesianGrid stroke="#2a3128" vertical={false} />
         <XAxis
           dataKey={xKey}
           tick={AXIS}
           tickLine={false}
-          axisLine={{ stroke: '#232935' }}
+          axisLine={{ stroke: '#2a3128' }}
           minTickGap={24}
         />
         <YAxis
@@ -108,7 +101,7 @@ export function TrendChart({
           <Legend
             iconType="circle"
             iconSize={7}
-            wrapperStyle={{ fontSize: 12, paddingTop: 8 }}
+            wrapperStyle={{ fontSize: 12, paddingTop: 12 }}
           />
         )}
         {series.map((s) =>
@@ -119,7 +112,7 @@ export function TrendChart({
               name={s.label}
               fill={s.color}
               stackId={stacked ? 'a' : undefined}
-              radius={stacked ? 0 : [2, 2, 0, 0]}
+              radius={stacked ? 0 : [3, 3, 0, 0]}
             />
           ) : Chart === LineChart ? (
             <Line
@@ -130,7 +123,7 @@ export function TrendChart({
               stroke={s.color}
               strokeWidth={2}
               dot={false}
-              activeDot={{ r: 3.5 }}
+              activeDot={{ r: 4, strokeWidth: 2, fill: '#141916' }}
               connectNulls
             />
           ) : (
@@ -140,9 +133,9 @@ export function TrendChart({
               dataKey={s.key}
               name={s.label}
               stroke={s.color}
-              strokeWidth={stacked ? 1 : 2}
+              strokeWidth={stacked ? 0 : 2}
               fill={s.color}
-              fillOpacity={stacked ? 0.85 : 0.14}
+              fillOpacity={stacked ? 0.85 : 0.15}
               stackId={stacked ? 'a' : undefined}
               connectNulls
             />
