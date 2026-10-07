@@ -13,13 +13,13 @@ import {
 import { billions, pct, usd } from '@/lib/format'
 
 const COLORS: Record<string, string> = {
-  bnsf: '#e8813a',
-  bhe: '#4a9d7f',
-  insurance: '#5b8dd6',
-  manufacturing: '#b06fd0',
-  service_retail: '#d4a03c',
-  mclane: '#6f7a8c',
-  pilot: '#c95f6b',
+  bnsf: '#ea580c',
+  bhe: '#16a34a',
+  insurance: '#3b82f6',
+  manufacturing: '#a855f7',
+  service_retail: '#eab308',
+  mclane: '#78716c',
+  pilot: '#f43f5e',
 }
 
 export default function App() {
@@ -30,20 +30,20 @@ export default function App() {
     loadSegments().then(setData, (e: Error) => setError(e.message))
   }, [])
 
-  if (error) return <Fallback>Could not load the dataset — {error}</Fallback>
-  if (!data) return <Fallback>Loading Berkshire filings…</Fallback>
+  if (error) return <Fallback>Could not load the dataset: {error}</Fallback>
+  if (!data) return <Fallback>Loading Berkshire filings</Fallback>
   return <Dashboard data={data} />
 }
 
 function Dashboard({ data }: { data: Dataset }) {
   const qs = useMemo(() => quarters(data), [data])
   const latest = qs[qs.length - 1]
-  const prior = qs[qs.length - 5] // same quarter, a year earlier
+  const prior = qs[qs.length - 5]
 
   const series: Series[] = data.segments.map((s) => ({
     key: s.key,
     label: s.label,
-    color: COLORS[s.key] ?? '#7d8798',
+    color: COLORS[s.key] ?? '#78716c',
   }))
 
   const rows = data.segments
@@ -54,7 +54,7 @@ function Dashboard({ data }: { data: Dataset }) {
       return {
         key: s.key,
         label: s.label,
-        color: COLORS[s.key] ?? '#7d8798',
+        color: COLORS[s.key] ?? '#78716c',
         ...now,
         revenueYoY:
           now.revenue && then?.revenue ? now.revenue / then.revenue - 1 : undefined,
@@ -62,9 +62,6 @@ function Dashboard({ data }: { data: Dataset }) {
     })
     .filter((r): r is NonNullable<typeof r> => r !== null)
 
-  // Charts run on trailing-twelve-month figures. Berkshire's quarters swing hard
-  // on seasonality — utilities peak in winter, retail in Q4 — and TTM strips
-  // that out so the underlying trend is actually readable.
   const trend = qs.map((p, i) => {
     const row: Record<string, string | number | null> = { label: quarterLabel(p) }
     for (const s of data.segments) {
@@ -104,7 +101,7 @@ function Dashboard({ data }: { data: Dataset }) {
         return {
           key: s.key,
           label: s.label,
-          color: COLORS[s.key] ?? '#7d8798',
+          color: COLORS[s.key] ?? '#78716c',
           pretax,
           capex,
           netFlow: pretax - capex,
@@ -115,200 +112,246 @@ function Dashboard({ data }: { data: Dataset }) {
 
   const totalRev = rows.reduce((a, r) => a + (r.revenue ?? 0), 0)
   const totalPretax = rows.reduce((a, r) => a + (r.pretax ?? 0), 0)
-  const best = [...rows].sort((a, b) => (b.margin ?? 0) - (a.margin ?? 0))[0]
-  const worst = [...rows].sort((a, b) => (a.margin ?? 1) - (b.margin ?? 1))[0]
+  const totalCapex = rows.reduce((a, r) => a + (r.capex ?? 0), 0)
 
   return (
-    <div className="mx-auto max-w-6xl px-5 py-10 sm:px-8">
-      <header className="mb-9">
-        <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-muted">
-          Buffett's Edge
-        </p>
-        <h1 className="mt-2 max-w-2xl text-3xl font-semibold leading-tight tracking-tight text-bright sm:text-[38px]">
-          The other three quarters of Berkshire
-        </h1>
-        <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-muted">
-          Everyone tracks the $260B stock portfolio, because it arrives in one
-          tidy 13F download. The operating businesses — the railroad, the
-          utilities, the insurers, the manufacturers — are most of the company
-          and almost nobody charts them. This does, straight from the filings.
-        </p>
+    <div className="min-h-screen">
+      {/* Hero: Poster headline + Capital Map as signature visual */}
+      <header className="relative overflow-hidden border-b border-rule px-4 pb-12 pt-8 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-7xl">
+          {/* Eyebrow with live data */}
+          <div className="reveal mb-6 flex items-center gap-3 text-sm text-muted">
+            <span className="inline-flex h-2 w-2 rounded-full bg-signal animate-pulse" />
+            <span>{data.entity}</span>
+            <span className="text-rule">|</span>
+            <span>{qs.length} quarters of XBRL data</span>
+          </div>
+
+          <div className="grid gap-8 lg:grid-cols-[1fr,400px] lg:gap-12 xl:grid-cols-[1fr,480px]">
+            {/* Left: Poster headline */}
+            <div className="reveal reveal-delay-1">
+              <h1 className="display text-[clamp(2.5rem,8vw,5.5rem)] text-bright">
+                The other{' '}
+                <span className="text-signal">three quarters</span>{' '}
+                of Berkshire
+              </h1>
+              <p className="mt-6 max-w-xl text-lg leading-relaxed text-secondary">
+                Everyone tracks the $260B stock portfolio. The operating 
+                businesses are most of the company and almost nobody charts them.
+              </p>
+
+              {/* Big KPI numbers */}
+              <div className="mt-10 flex flex-wrap gap-8">
+                <KPI 
+                  label={`Revenue ${quarterLabel(latest)}`} 
+                  value={usd(totalRev)} 
+                />
+                <KPI 
+                  label="Pre-tax earnings" 
+                  value={usd(totalPretax)} 
+                  accent 
+                />
+                <KPI 
+                  label="Capex deployed" 
+                  value={usd(totalCapex)} 
+                />
+              </div>
+            </div>
+
+            {/* Right: Capital Map as signature hero visual */}
+            {hasCapexData && capitalMapData.length > 0 && (
+              <div className="reveal reveal-delay-2 rounded-lg border border-rule bg-surface p-4 lg:p-5">
+                <div className="mb-3 flex items-center justify-between text-sm">
+                  <span className="font-medium text-bright">Capital allocation</span>
+                  <span className="text-muted">TTM net flow</span>
+                </div>
+                <CapitalMap data={capitalMapData} height={260} compact />
+              </div>
+            )}
+          </div>
+        </div>
       </header>
 
-      <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <Stat label={`Revenue · ${quarterLabel(latest)}`} value={usd(totalRev)} />
-        <Stat label="Pre-tax earnings" value={usd(totalPretax)} />
-        <Stat
-          label={`Widest margin · ${best?.label ?? ''}`}
-          value={pct(best?.margin)}
-          accent={best?.color}
-        />
-        <Stat
-          label={`Thinnest · ${worst?.label ?? ''}`}
-          value={pct(worst?.margin)}
-          accent={worst?.color}
-        />
-      </div>
+      {/* Main content with asymmetric layout */}
+      <main className="px-4 py-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-7xl space-y-16">
+          
+          {/* Segment Table: Full width, dense data */}
+          <section className="reveal">
+            <SectionHead 
+              title={`Segment results, ${quarterLabel(latest)}`}
+              subtitle="Sortable. Every figure tagged XBRL from the SEC filing."
+            />
+            <div className="mt-5">
+              <SegmentTable rows={rows} period={latest} prior={prior} />
+            </div>
+          </section>
 
-      <div className="space-y-6">
-        <Panel
-          title={`Segment results — ${quarterLabel(latest)}`}
-          description="Sort by any column. Every figure is tagged XBRL from the filing itself, not a vendor's re-keying."
-        >
-          <SegmentTable rows={rows} period={latest} prior={prior} />
-        </Panel>
-
-        {hasCapexData && capitalMapData.length > 0 && (
-          <Panel
-            title="The capital map"
-            description="Buffett's allocation job in one chart: which businesses throw off cash, and which absorb it. Net capital flow is trailing-twelve-month pretax earnings minus capex."
-          >
-            <CapitalMap data={capitalMapData} height={300} />
-            <div className="mt-4 grid gap-4 text-[13px] leading-relaxed text-muted sm:grid-cols-2">
+          {/* Capital Map expanded + explanation - asymmetric 2/3 + 1/3 */}
+          {hasCapexData && capitalMapData.length > 0 && (
+            <section className="reveal grid gap-8 lg:grid-cols-[2fr,1fr]">
               <div>
-                <h3 className="mb-1 font-medium text-bright">The engines</h3>
+                <SectionHead 
+                  title="Generators vs absorbers"
+                  subtitle="Where does the capital flow? TTM pretax earnings minus capex."
+                />
+                <Panel className="mt-5">
+                  <CapitalMap data={capitalMapData} height={320} />
+                </Panel>
+              </div>
+              <div className="space-y-6 text-[15px] leading-relaxed text-secondary lg:pt-12">
+                <div>
+                  <h3 className="mb-2 font-medium text-signal">The engines</h3>
+                  <p>
+                    Insurance generates billions with almost no physical plant.
+                    Manufacturing earns well on modest reinvestment. These
+                    businesses fund everything else.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="mb-2 font-medium text-loss">The sinks</h3>
+                  <p>
+                    Utilities and the railroad absorb capital. BHE pours more into
+                    power plants than it earns pre-tax. BNSF keeps the locomotives
+                    running with continuous reinvestment.
+                  </p>
+                </div>
+                <p className="text-sm text-muted">
+                  Capex disclosed per segment from 2024 (ASU 2023-07).
+                </p>
+              </div>
+            </section>
+          )}
+
+          {/* Revenue mix: Dominant chart */}
+          <section className="reveal">
+            <SectionHead 
+              title="Revenue mix over time"
+              subtitle="Trailing twelve months, stacked. Pilot Travel Centers consolidated 2023."
+            />
+            <Panel className="mt-5">
+              <TrendChart
+                data={trend}
+                series={series}
+                xKey="label"
+                variant="stacked-area"
+                height={360}
+                formatValue={(v) => `$${billions(v, 1)}B`}
+                formatAxis={(v) => `${(v / 1e9).toFixed(0)}B`}
+              />
+            </Panel>
+          </section>
+
+          {/* Two charts side by side - asymmetric */}
+          <section className="reveal grid gap-8 lg:grid-cols-[1.2fr,1fr]">
+            <div>
+              <SectionHead 
+                title="Margin by segment"
+                subtitle="Pre-tax margin, TTM. The spread shows these aren't the same business."
+              />
+              <Panel className="mt-5">
+                <TrendChart
+                  data={marginTrend}
+                  series={series}
+                  xKey="label"
+                  variant="line"
+                  height={300}
+                  formatValue={(v) => pct(v)}
+                  formatAxis={(v) => `${(v * 100).toFixed(0)}%`}
+                  yDomain={[0, 'auto']}
+                />
+              </Panel>
+            </div>
+            <div>
+              <SectionHead 
+                title="Quarterly capex"
+                subtitle="Additions to long-lived assets. BHE dominates."
+              />
+              <Panel className="mt-5">
+                <TrendChart
+                  data={capexTrend}
+                  series={series}
+                  xKey="label"
+                  variant="stacked-bar"
+                  height={300}
+                  formatValue={(v) => `$${billions(v, 2)}B`}
+                  formatAxis={(v) => `${(v / 1e9).toFixed(1)}B`}
+                />
+              </Panel>
+              <p className="mt-3 text-sm text-muted">
+                Capex disclosed from 2024 under ASU 2023-07.
+              </p>
+            </div>
+          </section>
+
+          {/* Source info - compact */}
+          <section className="reveal border-t border-rule pt-10">
+            <div className="grid gap-8 text-[14px] leading-relaxed text-secondary sm:grid-cols-2">
+              <div>
+                <h3 className="mb-2 text-sm font-medium text-bright">Source</h3>
                 <p>
-                  Insurance generates billions with almost no physical plant — float
-                  and underwriting profits, not factories. Manufacturing earns well
-                  on modest reinvestment. These are the businesses that fund everything
-                  else.
+                  SEC EDGAR XBRL instance documents from every 10-Q and 10-K since{' '}
+                  {qs[0].end.slice(0, 4)}. No vendor data, no API key. The{' '}
+                  <code className="rounded bg-elevated px-1.5 py-0.5 text-signal">companyfacts</code>{' '}
+                  endpoint strips XBRL dimensions, so per-segment figures require
+                  parsing the filings directly.
                 </p>
               </div>
               <div>
-                <h3 className="mb-1 font-medium text-bright">The sinks</h3>
+                <h3 className="mb-2 text-sm font-medium text-bright">Caveats</h3>
                 <p>
-                  Utilities and the railroad eat capital. BHE alone pours more into
-                  power plants and transmission than it earns in pretax income —
-                  that's the regulated-utility bargain. BNSF keeps the locomotives
-                  running with continuous reinvestment.
+                  Berkshire tags its segment note twice: revenue disaggregation
+                  (folds insurance with corporate) and operating-segment P&L. Only
+                  the second is used here. Earnings switched from operating income
+                  to pre-tax in 2024; basis is labeled per period.
                 </p>
               </div>
             </div>
-            <p className="mt-4 text-[12px] leading-relaxed text-muted">
-              Capex is only disclosed per segment from 2024, when ASU 2023-07
-              required expanded segment reporting. Earlier periods have revenue
-              and earnings only.
-            </p>
-          </Panel>
-        )}
+          </section>
+        </div>
+      </main>
 
-        <Panel
-          title="Revenue mix"
-          description="Trailing twelve months, stacked. Pilot Travel Centers appears in 2023, when Berkshire took majority control and began consolidating it."
-        >
-          <TrendChart
-            data={trend}
-            series={series}
-            xKey="label"
-            variant="stacked-area"
-            height={320}
-            formatValue={(v) => `$${billions(v, 1)}B`}
-            formatAxis={(v) => `${(v / 1e9).toFixed(0)}B`}
-          />
-        </Panel>
-
-        <Panel
-          title="Margin, by business"
-          description={
-            <>
-              Pre-tax margin on trailing twelve months. The spread is the whole
-              point: a railroad and a grocery distributor are not the same
-              business, and consolidated results hide that completely.
-            </>
-          }
-        >
-          <TrendChart
-            data={marginTrend}
-            series={series}
-            xKey="label"
-            variant="line"
-            height={320}
-            formatValue={(v) => pct(v)}
-            formatAxis={(v) => `${(v * 100).toFixed(0)}%`}
-            yDomain={[0, 'auto']}
-          />
-        </Panel>
-
-        <Panel
-          title="Where the capital goes"
-          description="Quarterly additions to long-lived assets. Berkshire Hathaway Energy absorbs more capex than every other segment combined — the utilities are the capital sink, and the railroad is next."
-        >
-          <TrendChart
-            data={capexTrend}
-            series={series}
-            xKey="label"
-            variant="stacked-bar"
-            height={300}
-            formatValue={(v) => `$${billions(v, 2)}B`}
-            formatAxis={(v) => `${(v / 1e9).toFixed(1)}B`}
-          />
-          <p className="mt-3 text-[12px] leading-relaxed text-muted">
-            Capex, costs and D&amp;A are only disclosed per segment from 2024,
-            when the expanded segment-reporting standard (ASU 2023-07) took
-            effect. Earlier quarters carry revenue and earnings only.
+      {/* Footer */}
+      <footer className="border-t border-rule px-4 py-6 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-7xl flex flex-col gap-2 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            Data generated {data.generated.slice(0, 10)} from {data.entity} (CIK{' '}
+            {data.cik}). {qs.length} quarters, {qs[0].end.slice(0, 7)} to{' '}
+            {latest.end.slice(0, 7)}.
           </p>
-        </Panel>
-
-        <Panel title="How this is built">
-          <div className="grid gap-5 text-[13px] leading-relaxed text-muted sm:grid-cols-2">
-            <div>
-              <h3 className="mb-1.5 font-medium text-bright">Source</h3>
-              <p>
-                SEC EDGAR, parsed from the XBRL instance document of every 10-Q
-                and 10-K back to {qs[0].end.slice(0, 4)}. No vendor data and no
-                API key — the <code className="text-bright">companyfacts</code>{' '}
-                endpoint strips XBRL dimensions, so the per-segment numbers only
-                exist inside the filings themselves.
-              </p>
-            </div>
-            <div>
-              <h3 className="mb-1.5 font-medium text-bright">Two caveats</h3>
-              <p>
-                Berkshire tags its segment note twice — once as a revenue
-                disaggregation that folds insurance in with corporate, once as a
-                true operating-segment P&amp;L. Only the second is used here;
-                mixing them double-counts insurance. And earnings switched from
-                operating income to pre-tax income in 2024, so the basis is
-                labelled per period rather than spliced.
-              </p>
-            </div>
-          </div>
-        </Panel>
-      </div>
-
-      <footer className="mt-10 border-t border-line pt-5 text-[12px] leading-relaxed text-muted">
-        <p>
-          Data generated {data.generated.slice(0, 10)} from{' '}
-          {data.entity} (CIK {data.cik}) filings. {qs.length} quarters,{' '}
-          {qs[0].end.slice(0, 7)} to {latest.end.slice(0, 7)}.
-        </p>
-        <p className="mt-2">
-          For information only. Not investment advice, not affiliated with
-          Berkshire Hathaway Inc.
-        </p>
+          <p>
+            For information only. Not investment advice.
+          </p>
+        </div>
       </footer>
     </div>
   )
 }
 
-function Stat({
-  label,
-  value,
-  accent,
-}: {
+function SectionHead({ title, subtitle }: { title: string; subtitle?: string }) {
+  return (
+    <div>
+      <h2 className="text-xl font-medium text-bright sm:text-2xl">{title}</h2>
+      {subtitle && (
+        <p className="mt-1.5 text-[15px] text-muted">{subtitle}</p>
+      )}
+    </div>
+  )
+}
+
+function KPI({ 
+  label, 
+  value, 
+  accent 
+}: { 
   label: string
   value: string
-  accent?: string
+  accent?: boolean
 }) {
   return (
-    <div className="rounded-lg border border-line bg-panel/60 px-4 py-3">
-      <p className="truncate text-[11px] uppercase tracking-wider text-muted">
-        {label}
-      </p>
-      <p
-        className="nums mt-1.5 text-[22px] font-semibold text-bright"
-        style={accent ? { color: accent } : undefined}
-      >
+    <div>
+      <p className="text-sm text-muted">{label}</p>
+      <p className={`big-num mt-1 text-3xl sm:text-4xl ${accent ? 'text-signal' : 'text-bright'}`}>
         {value}
       </p>
     </div>
@@ -317,7 +360,7 @@ function Stat({
 
 function Fallback({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex min-h-screen items-center justify-center px-6 text-[14px] text-muted">
+    <div className="flex min-h-screen items-center justify-center px-6 text-secondary">
       {children}
     </div>
   )

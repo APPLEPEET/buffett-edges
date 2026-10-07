@@ -1,22 +1,97 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #0b0e13;
-  --color-panel: #141821;
-  --color-line: #232935;
-  --color-muted: #7d8798;
-  --color-bright: #e8ecf3;
+  /* Dark ink ground - like a Bloomberg terminal, serious finance */
+  --color-ink: #0c0f0a;
+  --color-surface: #141916;
+  --color-elevated: #1c211a;
+  --color-rule: #2a3128;
+  --color-muted: #6b7a68;
+  --color-secondary: #9ca898;
+  --color-bright: #e8ede6;
 
-  --color-bnsf: #e8813a;
-  --color-bhe: #4a9d7f;
-  --color-insurance: #5b8dd6;
-  --color-manufacturing: #b06fd0;
-  --color-service_retail: #d4a03c;
-  --color-mclane: #6f7a8c;
-  --color-pilot: #c95f6b;
+  /* THE signal color: deep emerald "money green" 
+     Used boldly on hero words, big numerals, positive states */
+  --color-signal: #10b981;
+  --color-signal-dim: #059669;
+  --color-signal-bright: #34d399;
 
-  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  /* Negative/loss state */
+  --color-loss: #ef4444;
+  --color-loss-dim: #dc2626;
+
+  /* Segment colors - railroad/industrial palette */
+  --color-bnsf: #ea580c;
+  --color-bhe: #16a34a;
+  --color-insurance: #3b82f6;
+  --color-manufacturing: #a855f7;
+  --color-service_retail: #eab308;
+  --color-mclane: #78716c;
+  --color-pilot: #f43f5e;
+
+  /* Typography: 
+     Display: Instrument Serif for poster headlines (characterful, editorial)
+     Body: Geist (clean, modern grotesque)
+     Mono: JetBrains Mono for tabular data */
+  --font-display: "Instrument Serif", Georgia, serif;
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/instrumentserif/v4/jizBRFtNs2ka5fXjeivQ4LroWlx-2zIZj1bIkNo.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/instrumentserif/v4/jizHRFtNs2ka5fXjeivQ4LroWlx-6zASi1bIkNo.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Geist";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/Geist-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Geist";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/Geist-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Geist";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/Geist-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8-axjPVmUsaaDhw.woff2") format("woff2");
 }
 
 html {
@@ -29,11 +104,86 @@ body {
   background: var(--color-ink);
   color: var(--color-bright);
   font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Tabular figures everywhere numbers are compared down a column. */
+/* Display type for poster headlines */
+.display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+/* Tabular figures for data columns */
 .nums {
   font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
+  font-size: 13px;
+  letter-spacing: -0.01em;
+}
+
+/* Big numerals with character */
+.big-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+/* Stagger animation for scroll reveals */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  animation: reveal-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.reveal-delay-1 { animation-delay: 0.1s; }
+.reveal-delay-2 { animation-delay: 0.2s; }
+.reveal-delay-3 { animation-delay: 0.3s; }
+.reveal-delay-4 { animation-delay: 0.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Recharts overrides for dark theme */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: var(--color-rule);
+}
+
+/* Signature hover effect for interactive elements */
+.hover-lift {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hover-lift {
+    transition: none;
+  }
+  .hover-lift:hover {
+    transform: none;
+  }
 }
