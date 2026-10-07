@@ -63,7 +63,7 @@ export function TrendChart({
 
   const tooltip = (
     <Tooltip
-      cursor={{ fill: 'rgba(16, 185, 129, 0.05)' }}
+      cursor={{ fill: 'rgba(45, 154, 104, 0.05)' }}
       contentStyle={{
         background: '#1c211a',
         border: '1px solid #2a3128',

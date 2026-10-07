@@ -42,12 +42,12 @@ colors:
 
 ```yaml
 signal:
-  base: "#10b981"          # Emerald 500 - THE ownable color
-  dim: "#059669"           # For subtle accents
-  bright: "#34d399"        # For emphasis moments
+  base: "#2d9a68"          # Banknote / ledger green - THE ownable color
+  dim: "#1e734f"           # For subtle accents
+  bright: "#48b07c"        # Hover / highlight tint
 ```
 
-**Why emerald green?** This is a finance product about capital allocation.
+**Why money green?** This is a finance product about capital allocation.
 Green = money, profit, positive flow. Used BOLDLY on:
 - Hero headline "three quarters"
 - Big KPI numerals
@@ -58,7 +58,7 @@ Green = money, profit, positive flow. Used BOLDLY on:
 
 ```yaml
 status:
-  positive: "#10b981"      # Same as signal - consistency
+  positive: "#2d9a68"      # Same as signal - consistency
   negative: "#ef4444"      # Red for losses/absorbers
 ```
 
@@ -214,7 +214,7 @@ No heavy shadows, no glassmorphism.
 ### Second-order tells
 
 - ❌ Cream + terracotta "Claude look" (SD1)
-- ❌ Near-black + acid green (SD2) - we use emerald, not neon
+- ❌ Near-black + acid green (SD2) - we use banknote green, not neon
 - ❌ All-caps tracking-wide eyebrows (SD4)
 - ❌ Middle dots in labels (SD4d)
 - ❌ Decorative 01/02/03 numbers (SD6)
@@ -224,7 +224,7 @@ No heavy shadows, no glassmorphism.
 
 ### Design choices made
 
-- ✅ **Ownable color:** Emerald green as bold signal, used on hero text and KPIs
+- ✅ **Ownable color:** Banknote green as bold signal, used on hero text and KPIs
 - ✅ **Poster type:** Instrument Serif at clamp(2.5rem, 8vw, 5.5rem) with 0.95 leading
 - ✅ **Signature element:** Capital map as hero visual and identity
 - ✅ **Asymmetric layout:** 2/3+1/3 grids, varied section rhythm
@@ -242,7 +242,7 @@ No heavy shadows, no glassmorphism.
 | Body text | #e8ede6 | #0c0f0a | 14.3:1 ✓ |
 | Secondary | #9ca898 | #0c0f0a | 6.8:1 ✓ |
 | Muted | #6b7a68 | #0c0f0a | 4.5:1 ✓ |
-| Signal | #10b981 | #0c0f0a | 6.2:1 ✓ |
+| Signal | #2d9a68 | #0c0f0a | 5.45:1 ✓ |
 | Loss | #ef4444 | #0c0f0a | 5.4:1 ✓ |
 
 ### Focus states
@@ -268,7 +268,7 @@ Responsive down to 375px:
 
 ### Do
 
-- Use emerald green boldly on important data points
+- Use banknote green boldly on important data points
 - Let the capital map be the visual hero
 - Keep asymmetric, varied rhythm
 - Use staggered animations on lists/tables
