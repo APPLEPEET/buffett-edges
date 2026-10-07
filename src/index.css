@@ -10,11 +10,11 @@
   --color-secondary: #9ca898;
   --color-bright: #e8ede6;
 
-  /* THE signal color: deep emerald "money green" 
+  /* THE signal color: engraved banknote / ledger "money green"
      Used boldly on hero words, big numerals, positive states */
-  --color-signal: #10b981;
-  --color-signal-dim: #059669;
-  --color-signal-bright: #34d399;
+  --color-signal: #2d9a68;
+  --color-signal-dim: #1e734f;
+  --color-signal-bright: #48b07c;
 
   /* Negative/loss state */
   --color-loss: #ef4444;
@@ -176,7 +176,7 @@ body {
 
 .hover-lift:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.15);
+  box-shadow: 0 8px 24px rgba(45, 154, 104, 0.15);
 }
 
 @media (prefers-reduced-motion: reduce) {

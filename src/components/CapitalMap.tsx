@@ -69,7 +69,7 @@ export function CapitalMap({ data, height = 280, compact }: CapitalMapProps) {
           />
           <ReferenceLine x={0} stroke="#6b7a68" strokeDasharray="3 3" />
           <Tooltip
-            cursor={{ fill: 'rgba(16, 185, 129, 0.05)' }}
+            cursor={{ fill: 'rgba(45, 154, 104, 0.05)' }}
             content={({ active, payload }) => {
               if (!active || !payload?.[0]) return null
               const d = payload[0].payload as CapitalFlowData
@@ -105,7 +105,7 @@ export function CapitalMap({ data, height = 280, compact }: CapitalMapProps) {
             {sorted.map((entry) => (
               <Cell
                 key={entry.key}
-                fill={entry.netFlow >= 0 ? '#10b981' : '#ef4444'}
+                fill={entry.netFlow >= 0 ? '#2d9a68' : '#ef4444'}
                 fillOpacity={0.9}
                 className="transition-opacity hover:opacity-100"
               />
